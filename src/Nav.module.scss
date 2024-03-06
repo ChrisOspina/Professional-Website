@@ -1,0 +1,36 @@
+.Navbar {
+  height: 100%; 
+  width: 160px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  background-color: grey;
+  overflow-x: hidden; 
+  padding-top: 20px;
+
+  a {
+    text-decoration: none;
+    font-size: 1.25em;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: underline;
+    display: block;
+
+    &:hover {
+      color: blue;
+      cursor: pointer;
+    }
+  }
+}
+
+.card {
+  &.Card {
+    &.Body {
+      &.Card {
+        &.Text {
+          font-size: small;
+        }
+      }
+    }
+  }
+}

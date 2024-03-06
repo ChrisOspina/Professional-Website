@@ -1,0 +1,111 @@
+.siteHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.siteTitle{
+    justify-content: center;
+    margin-bottom: 1em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.siteDescription{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+
+h2{
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-top: -1rem;
+    text-align: center;
+    font-family: 'Georgia, Times New Roman', Times, serif;
+}
+
+.siteHeader::after {
+    display: block;
+    margin: 3rem 0;
+    content: "⚍⚌⚍";
+}
+
+.siteFooter{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+}
+
+.mainContent{
+    margin: 0 auto;
+    padding: 0.1rem;
+    max-width: 60rem;
+    text-align: start;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mainContent .descripiton::after{
+    margin: 4rem auto;
+    display: block;
+    content: "";
+    border-bottom: 3px solid black;
+    width: 4rem;
+}
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+.ListHead{
+    font-weight: bold;
+    justify-content: left;
+    margin-bottom: 1em;
+    text-align: left;
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    font-size: 1.25rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li{
+    display: list-item;
+    text-align: match-parent;
+}
+
+.lists:after{
+    margin: 4rem auto;
+    display: block;
+    content: "";
+    border-bottom: 3px solid black;
+    width: 4rem;
+}
+
+.contactNavheader{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
