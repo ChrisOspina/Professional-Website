@@ -28,42 +28,25 @@ return(
         </p>
         </div>
         <article className="profile">
-            <img className="profile_pic" src={profile} alt="profile"/>
+            <figure className="profile_img_container">
+                <img className="profile_pic" src={profile} alt="profile"/>
+            </figure>
         </article>
         <br/>
-        <div className="lists">
             <div className="skills">
-                <h1 className="ListHead">Soft Skills</h1>
-                <ul id="skillslist">    
-                    <li>Cybersecurity</li>
-                    <li>Game Programming</li>
-                    <li>Unix Operating Systems</li>
-                    <li>Microsoft Office</li>
-                    <li>Database Systems</li>
+                <h1 className="ListHead"><strong>Portfolio</strong></h1>
+                <ul id="services">    
+                    <li><a href="https://github.com/htmw/2024S-Med-X">Med-X AI web application for chest X-rays</a></li>
+                    <br/>
+                    <li><a href="https://docs.google.com/document/d/e/2PACX-1vT7D-WqYybf5U3y1wWVKvcPPKgSar9AYW2AvL9tMdf-L8uNWnxTovx_hdsMCX1sGA/pub">View My Resume</a></li>
+                    <br/>
+                    <li><a href="https://www.linkedin.com/in/christopher-ospina-311b68185/">Connect with me on LinkedIn</a></li>
+                    <br/>
+                    <li><a href="https://github.com/ChrisOspina">Check out my GitHub</a></li>
+                    <br/>
+                    <li><a href="mailto:ChrisOspina99@gmail.com">Shoot Me an Email</a></li>
                 </ul>
             </div>
-            <div className="languages">
-                <h1 className="ListHead">Programming Languages</h1>
-                <ul id="Langlist">    
-                    <li>C++</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>Php</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>Bash</li>
-                </ul>
-            </div>
-            <div className="certificates">
-                <h1 className="ListHead">Certifications</h1>
-                <ul id="certLisrlist">    
-                    <li> Google Cybersecurity</li>
-                    <li>Customer Service Standards</li>
-                </ul>
-            </div>
-        </div>
-       
-
     </div>
 )
 }
