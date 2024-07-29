@@ -114,16 +114,3 @@ li{
 p{
     font-size: 18px;
 }
-#hamburger-icon{
-    margin: auto 0;
-    display: none;
-    cursor: pointer;
-}
-
-#hamburger-icon div{
-    width: 35px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-}

@@ -3,6 +3,7 @@ import {Navbar,Nav,Container} from "react-bootstrap";
 import styles from "./Nav.module.scss"; 
 
 
+
 function ContactNav(){
     const openLinkedInProfile =()=>{
         window.open("https://www.linkedin.com/in/christopher-ospina-311b68185/", "_blank");
@@ -35,6 +36,11 @@ function ContactNav(){
         <Container>
             <h1 className="contactNavheader">Portfolio</h1>
                     <Nav className={styles.Nav}>
+                              <Nav.Link className={styles.Link} onClick={openMedX}>
+                                    View Med-X Capstone Project
+                                </Nav.Link>
+                                <br/>
+                                <br/>
                                 <Nav.Link className={styles.Link} onClick={openLinkedInProfile}>
                                     LinkedIn
                                 </Nav.Link>
@@ -52,19 +58,9 @@ function ContactNav(){
                                 <br/>
                                 <Nav.Link  className={styles.Link} onClick={openEmailPopup}>
                                     Shoot Me an Email
-                                </Nav.Link>
-                                <br/>
-                                <br/>
-                                <Nav.Link className={styles.Link} onClick={openMedX}>
-                                    View Med-X Capstone Project
-                                </Nav.Link>
+                                </Nav.Link>    
                             </Nav>
         </Container>
-            <div id="hamburger-icon">
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-                <div className="bar3"></div>
-            </div>
         </Navbar>
         </>
     )
