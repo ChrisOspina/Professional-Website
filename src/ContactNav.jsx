@@ -6,12 +6,12 @@ import styles from "./Nav.module.scss";
 function ContactNav(){
     const openLinkedInProfile =()=>{
         window.open("https://www.linkedin.com/in/christopher-ospina-311b68185/", "_blank");
-        console.log("LinkedIn works");
+        //console.log("LinkedIn works");
     }
 
     const openGitHubProfile = () => {
         window.open("https://github.com/ChrisOspina","_blank");
-        console.log("GitHub works");
+        //console.log("GitHub works");
     }
 
     const openEmailPopup = () => {
@@ -21,10 +21,13 @@ function ContactNav(){
     //TODO: Update resume link
     const openResume = () =>{
         window.open("https://drive.google.com/file/d/1J1cXy1vsVwndSNF3JDRRKRitI33FydcJ/view?usp=sharing","_blank");
-        console.log(" you clicked open resume");
+        //console.log(" you clicked open resume");
+    }
+    const openMedX = () =>{
+        window.open("https://github.com/ChrisOspina/Chris.git", "_blank");
     }
 
-    //TODO: Write function that connects to Med-X app
+    //TODO Write function that connects to Simons work
 
     return(
         <>
@@ -52,6 +55,12 @@ function ContactNav(){
                                 <br/>
                                 <Nav.Link  className={styles.Link} onClick={openEmailPopup}>
                                     Shoot Me an Email
+                                </Nav.Link>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <Nav.Link className={styles.Link} onClick={openMedX}>
+                                    View Med-X Capstone Project
                                 </Nav.Link>
                             </Nav>
         </Container>

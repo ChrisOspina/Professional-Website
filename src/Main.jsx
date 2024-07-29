@@ -51,6 +51,7 @@ return(
                     <li>Php</li>
                     <li>Python</li>
                     <li>SQL</li>
+                    <li>Bash</li>
                 </ul>
             </div>
             <div className="certificates">
