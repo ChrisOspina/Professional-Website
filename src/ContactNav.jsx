@@ -6,12 +6,10 @@ import styles from "./Nav.module.scss";
 function ContactNav(){
     const openLinkedInProfile =()=>{
         window.open("https://www.linkedin.com/in/christopher-ospina-311b68185/", "_blank");
-        console.log("LinkedIn works");
     }
 
     const openGitHubProfile = () => {
         window.open("https://github.com/ChrisOspina","_blank");
-        console.log("GitHub works");
     }
 
     const openEmailPopup = () => {
@@ -19,7 +17,10 @@ function ContactNav(){
     }
     const openResume = () =>{
         window.open("https://drive.google.com/file/d/1J1cXy1vsVwndSNF3JDRRKRitI33FydcJ/view?usp=sharing","_blank");
-        console.log(" you clicked open resume");
+    }
+
+    const openMedX =()=>{
+        console.log("you clicked on open Med-X");
     }
 
     return(
@@ -59,4 +60,4 @@ function ContactNav(){
     )
 }
 
-export default Contact_Nav;
+export default ContactNav;
