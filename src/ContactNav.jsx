@@ -17,10 +17,14 @@ function ContactNav(){
     const openEmailPopup = () => {
         window.location.href = "mailto:ChrisOspina99@gmail.com";
     }
+
+    //TODO: Update resume link
     const openResume = () =>{
         window.open("https://drive.google.com/file/d/1J1cXy1vsVwndSNF3JDRRKRitI33FydcJ/view?usp=sharing","_blank");
         console.log(" you clicked open resume");
     }
+
+    //TODO: Write function that connects to Med-X app
 
     return(
         <>

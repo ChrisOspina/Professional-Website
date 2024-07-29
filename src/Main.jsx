@@ -3,13 +3,14 @@ import './style.css';
 import profile from './profile.jpg';
 
 function Main(){
+    //TODO: update information
 return(
     <div className="mainContent">
         <div className="mainHeader">
             <h2 className="mainHeader-heading">About Me</h2>
         </div>
         <div className="descripiton">
-            <p>I am currently a graduate computer science student at Pace University and seeking oppurtunities to use the state-of-the-art technology to solve real-world problems. I work part time at SAS Technologies, 
+            <p>I am currently an aspiring software engineer seeking oppurtunities to use the state-of-the-art technology to solve real-world problems. I work part time at SAS Technologies, 
         a firm based in Hewlett, NY. Where I assist with the security and telecommunications systems of clients all over the U.S. such as Pace,
         SVA and Touro.</p>
         <br/>
@@ -18,7 +19,7 @@ return(
         I took programming courses that covered aspects such as Database Systems, Web Development, Systems Analysis & Design, UNIX Operating Systems,
         Algorithms and Data Structures. During my tenure at Farmingdale, I partook in a summer research based project where I had the oppurtunity
         to assist in building an ontology based search engine. I then presented my findings at the SURC Research Confrence at SUNY Old Westbury. 
-        After my time at Farmingdale, I continued my studies at the Seidenberg School of Computer Science and Information Systems at Pace University.</p>
+        After my time at Farmingdale, I continued my studies at the Seidenberg School of Computer Science and Information Systems at Pace University to obtain a masters degree.</p>
         <br/>
         <p>
         Additionally, I have previously taken on a job at National Healthcare Associates Inc as a Junior Systems Adminstrator. From this job I have

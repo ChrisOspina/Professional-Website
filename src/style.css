@@ -66,10 +66,12 @@ p{
     border-bottom: 3px solid black;
     width: 4rem;
 }
-
+/*TODO: make image size responsive*/
 img{
     width: 300px;
     height: auto;
+    max-width: 100%;
+
 }
 
 .ListHead{
