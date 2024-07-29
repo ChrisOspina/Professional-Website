@@ -16,7 +16,7 @@ function ContactNav(){
         window.location.href = "mailto:ChrisOspina99@gmail.com";
     }
     const openResume = () =>{
-        window.open("https://drive.google.com/file/d/1J1cXy1vsVwndSNF3JDRRKRitI33FydcJ/view?usp=sharing","_blank");
+        window.open("https://docs.google.com/document/d/e/2PACX-1vT7D-WqYybf5U3y1wWVKvcPPKgSar9AYW2AvL9tMdf-L8uNWnxTovx_hdsMCX1sGA/pub","_blank");
     }
 
     const openMedX =()=>{
