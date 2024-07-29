@@ -33,20 +33,6 @@ return(
             </figure>
         </article>
         <br/>
-            <div className="skills">
-                <h1 className="ListHead"><strong>Portfolio</strong></h1>
-                <ul id="services">    
-                    <li><a href="https://github.com/htmw/2024S-Med-X">Med-X AI web application for chest X-rays</a></li>
-                    <br/>
-                    <li><a href="https://docs.google.com/document/d/e/2PACX-1vT7D-WqYybf5U3y1wWVKvcPPKgSar9AYW2AvL9tMdf-L8uNWnxTovx_hdsMCX1sGA/pub">View My Resume</a></li>
-                    <br/>
-                    <li><a href="https://www.linkedin.com/in/christopher-ospina-311b68185/">Connect with me on LinkedIn</a></li>
-                    <br/>
-                    <li><a href="https://github.com/ChrisOspina">Check out my GitHub</a></li>
-                    <br/>
-                    <li><a href="mailto:ChrisOspina99@gmail.com">Shoot Me an Email</a></li>
-                </ul>
-            </div>
     </div>
 )
 }
