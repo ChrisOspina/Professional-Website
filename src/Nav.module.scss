@@ -5,7 +5,7 @@
   top: 0; 
   background-color: grey;
   overflow-x: hidden; 
-  padding-top: 70px;
+  padding-top: 20px;
   position: fixed;
 
   a {
@@ -23,14 +23,8 @@
   }
 }
 
-.card {
-  &.Card {
-    &.Body {
-      &.Card {
-        &.Text {
-          font-size: small;
-        }
-      }
-    }
+@media only screen and (max-width: 600px){
+  .Navbar{
+    display: none;
   }
 }

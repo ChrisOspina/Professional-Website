@@ -33,12 +33,11 @@ function ContactNav(){
         <>
         <Navbar bg="light" expand="lg" className={styles.Navbar}>
         <Container>
-            <h1 className="contactNavheader">Contact Me</h1>
+            <h1 className="contactNavheader">Portfolio</h1>
                     <Nav className={styles.Nav}>
                                 <Nav.Link className={styles.Link} onClick={openLinkedInProfile}>
                                     LinkedIn
                                 </Nav.Link>
-                                <br/>
                                 <br/>
                                 <br/>
                                 <Nav.Link  className={styles.Link} onClick={openGitHubProfile}>
@@ -46,11 +45,9 @@ function ContactNav(){
                                 </Nav.Link>
                                 <br/>
                                 <br/>
-                                <br/>
                                 <Nav.Link  className={styles.Link} onClick={openResume}>
                                     View My Resume
                                 </Nav.Link>
-                                <br/>
                                 <br/>
                                 <br/>
                                 <Nav.Link  className={styles.Link} onClick={openEmailPopup}>
@@ -58,13 +55,16 @@ function ContactNav(){
                                 </Nav.Link>
                                 <br/>
                                 <br/>
-                                <br/>
                                 <Nav.Link className={styles.Link} onClick={openMedX}>
                                     View Med-X Capstone Project
                                 </Nav.Link>
                             </Nav>
         </Container>
-
+            <div id="hamburger-icon">
+                <div className="bar1"></div>
+                <div className="bar2"></div>
+                <div className="bar3"></div>
+            </div>
         </Navbar>
         </>
     )
