@@ -3,7 +3,7 @@ import {Navbar,Nav,Container} from "react-bootstrap";
 import styles from "./Nav.module.scss"; 
 
 
-function Contact_Nav(){
+function ContactNav(){
     const openLinkedInProfile =()=>{
         window.open("https://www.linkedin.com/in/christopher-ospina-311b68185/", "_blank");
         console.log("LinkedIn works");
@@ -57,4 +57,4 @@ function Contact_Nav(){
     )
 }
 
-export default Contact_Nav;
+export default ContactNav;

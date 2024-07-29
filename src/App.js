@@ -1,7 +1,7 @@
 import './App.css';
 import Header from "./header";
 import Main from "./Main";
-import Contact_Nav from "./Contact_Nav";
+import ContactNav from "./ContactNav";
 import Footer from "./Footer";
 
 
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Header/>
       <Main/>
-      <Contact_Nav/>
+      <ContactNav/>
       <Footer/>
     </div>
   );
