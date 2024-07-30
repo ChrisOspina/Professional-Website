@@ -1,6 +1,6 @@
 import React from "react";
 import {Navbar,Nav,Container} from "react-bootstrap";
-import styles from "./Nav.module.scss"; 
+import styles from "./include/Nav.module.scss"; 
 import './App.css';
 
 function ContactNav(){

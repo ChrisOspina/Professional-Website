@@ -98,6 +98,11 @@ li{
     text-align: match-parent;
 }
 
+p{
+    font-size: 18px;
+}
+
+
 .lists:after{
     margin: 4rem auto;
     display: block;
@@ -124,8 +129,41 @@ li{
   
   #mobile-hamburger-menu{
     display:none;
+    margin: auto 0;
+    cursor: pointer
   }
 
-p{
-    font-size: 18px;
-}
+  #mobile-hamburger-menu div{
+    width: 35px;
+    height:3px;
+    background-color: white;
+    margin: 6px 0;
+    transition:0.4s;
+  }
+
+  .open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+
+  .open .bar2{
+    opacity: 0;
+  }
+
+  .open .bar3{
+    -webkit-transform: rotate(-45deg) translate(-6px, 8px);
+    transform: rotate(-45deg) translate(-6px, 8px);
+  }
+
+  .mobile-menu{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+
+
+
+
