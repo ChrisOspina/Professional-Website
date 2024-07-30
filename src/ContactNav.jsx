@@ -1,7 +1,7 @@
 import React from "react";
 import {Navbar,Nav,Container} from "react-bootstrap";
 import styles from "./Nav.module.scss"; 
-
+import './App.css';
 
 function ContactNav(){
     const openLinkedInProfile =()=>{
@@ -28,7 +28,7 @@ function ContactNav(){
         <Navbar bg="light" expand="lg" className={styles.Navbar}>
         <Container>
             <h1 className="contactNavheader">Contact Me</h1>
-                    <Nav className={styles.Nav}>
+                    <Nav className="nav-links">
                                 <Nav.Link className={styles.Link} onClick={openMedX}>
                                     Med-X AI web application for chest X-rays
                                 </Nav.Link>
