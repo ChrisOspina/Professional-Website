@@ -5,22 +5,22 @@ import './App.css';
 
 function ContactNav(){
     const openLinkedInProfile =()=>{
-        window.open("https://www.linkedin.com/in/christopher-ospina-311b68185/", "_blank");
+        window.open("https://www.linkedin.com/in/christopher-ospina-311b68185/", "_self");
     }
 
     const openGitHubProfile = () => {
-        window.open("https://github.com/ChrisOspina","_blank");
+        window.open("https://github.com/ChrisOspina","_self");
     }
 
     const openEmailPopup = () => {
         window.location.href = "mailto:ChrisOspina99@gmail.com";
     }
     const openResume = () =>{
-        window.open("https://docs.google.com/document/d/e/2PACX-1vT7D-WqYybf5U3y1wWVKvcPPKgSar9AYW2AvL9tMdf-L8uNWnxTovx_hdsMCX1sGA/pub","_blank");
+        window.open("https://docs.google.com/document/d/e/2PACX-1vT7D-WqYybf5U3y1wWVKvcPPKgSar9AYW2AvL9tMdf-L8uNWnxTovx_hdsMCX1sGA/pub","_self");
     }
 
     const openMedX =()=>{
-       window.open("https://github.com/htmw/2024S-Med-X");
+       window.open("https://github.com/htmw/2024S-Med-X", "_self");
     }
 
     return(
