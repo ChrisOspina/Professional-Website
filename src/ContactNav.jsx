@@ -20,14 +20,14 @@ function ContactNav(){
     }
 
     const openMedX =()=>{
-        console.log("you clicked on open Med-X");
+       window.open("https://github.com/htmw/2024S-Med-X");
     }
 
     return(
         <>
         <Navbar bg="light" expand="lg" className={styles.Navbar}>
         <Container>
-            <h1 className="contactNavheader">Contact Me</h1>
+            <h1 className="contactNavheader">Portfolio</h1>
                     <Nav className="nav-links">
                                 <Nav.Link className={styles.Link} onClick={openMedX}>
                                     Med-X AI web application for chest X-rays
