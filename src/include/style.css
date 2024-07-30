@@ -128,7 +128,7 @@ p{
   }
   
   #mobile-hamburger-menu{
-    display:none;
+    display: none;
     margin: auto 0;
     cursor: pointer
   }
@@ -163,7 +163,3 @@ p{
     height: calc(100vh - 50px);
     width: 100%;
   }
-
-
-
-
