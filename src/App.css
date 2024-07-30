@@ -7,21 +7,6 @@
   pointer-events: none;
 }
 
-.nav-links{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.nav-links * {
-  padding: 1.25rem;
-}
-
-#mobile-hamburger-menu{
-  display:none;
-}
-
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
