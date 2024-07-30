@@ -8,6 +8,17 @@ export default function MobileHamburgerMenu(){
     }
 
     return (
-        <button id = "mobile-hamburger-menu" onClick = {handleClick}>Mobile</button>
+        <div id = "mobile-hamburger-menu" onClick={handleClick}>
+            <div className='bar1'></div>
+            <div className='bar2'></div>
+            <div className='bar3'></div>
+            <ul class="mobile-menu">
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+            </ul>
+        </div>
     );
 }
