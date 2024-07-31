@@ -59,7 +59,7 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.mainContent .descripiton::after{
+.mainContent .section::after{
     margin: 4rem auto;
     display: block;
     content: "";
