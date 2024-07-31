@@ -189,8 +189,7 @@ return(
                             <div className="card-content">
                                 <p>
                                     <span className="card-title">
-                                        <a href="https://www.pace.edu/seidenberg" className="teal-text hoverline">Seidenberg School of Copmuter Science & Information Systems 
-                                        , Pace University</a>
+                                        <a href="https://www.pace.edu/seidenberg" className="teal-text hoverline">Seidenberg School of Computer Science & Information Systems, Pace University</a>
                                     </span>
                                 </p>
                                 <p>
