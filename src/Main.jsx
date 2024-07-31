@@ -118,7 +118,7 @@ return(
           <div class="card-content">
             <div class="row">
               <div class="col s12 m2">
-                <a href=""><img alt="Simons logo"
+                <a href="https://www.simonsfoundation.org"><img alt="Simons logo"
                     src={simonslogo} class="responsive-img center-block" /></a>
               </div>
               <div class="col s12 m10">
@@ -149,7 +149,7 @@ return(
             </div>
         </section>
         <section>
-            
+
         </section>
 
 
