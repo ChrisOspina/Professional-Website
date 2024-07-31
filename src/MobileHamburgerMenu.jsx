@@ -11,7 +11,7 @@ export default function MobileHamburgerMenu(){
             <div className='bar1'></div>
             <div className='bar2'></div>
             <div className='bar3'></div>
-            <ul class="mobile-menu">
+            <ul className="mobile-menu">
                 <li><a href="https://github.com/htmw/2024S-Med-X">Med-X AI web application for chest X-ray</a></li>
                 <li><a href="https://www.linkedin.com/in/christopher-ospina-311b68185/">LinkedIn</a></li>
                 <li><a href="https://github.com/ChrisOspina">GitHub</a></li>

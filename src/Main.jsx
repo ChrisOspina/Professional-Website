@@ -1,13 +1,20 @@
 import React from "react";
 import './include/style.css';
 import profile from './profile.jpg';
-import nchalogo from './assets/National_HCA_Logo_RGB.png'
-import saslogo from './assets/saslogo.png'
+import nchalogo from './assets/National_HCA_Logo_RGB.png';
+import saslogo from './assets/saslogo.png';
+import simonslogo from './assets/01-SF-primary-logo-color.png'
 
 function Main(){
 return(
     <div className="mainContent">
         <div className="mainHeader">
+        <article className="profile">
+            <figure className="profile_img_container">
+                <img className="profile_pic" src={profile} alt="profile"/>
+            </figure>
+        </article>
+        <br/>
             <h2 className="mainHeader-heading">About Me</h2>
         </div>
 
@@ -104,18 +111,51 @@ return(
           <div class="card-action">
             <span>Aug 2023 - Present | Hewlett, NY</span>
           </div>
+          <br/>
+          <br/>
         </div>
-
-
-
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href=""><img alt="Simons logo"
+                    src={simonslogo} class="responsive-img center-block" /></a>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.simonsfoundation.org" 
+                      class="teal-text hoverline">Simons Foundation</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Linux Systems Administrator Intern</div>
+            <ul>
+              <li>
+              Used the MacOS terminal and Git bash to host code on a remote repository
+              </li>
+              <li>
+                Wrote Shell scripts to automate the deploy process of web applications
+              </li>
+              <li>
+                Composed a markdown document to instruct users how to install pakages
+              </li>
+                <li><b>Tools:</b> Apache, Git/GitHub, Docker, Bash, Markdown, VSCode, Ubuntu, MacOS</li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Jun 2024 - Aug 2024 | New York, NY</span>
+          </div>
+        </div>
             </div>
         </section>
+        <section>
+            
+        </section>
 
-        <article className="profile">
-            <figure className="profile_img_container">
-                <img className="profile_pic" src={profile} alt="profile"/>
-            </figure>
-        </article>
+
+
+
+       
         <br/>
     </div>
 )
