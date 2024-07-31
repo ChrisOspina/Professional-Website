@@ -85,7 +85,7 @@ return(
               </div>
               <div class="col s12 m10">
                 <p>
-                  <span class="card-title"><a href="https://www.sastechnologies.com" target="_blank"
+                  <span class="card-title"><a href="https://www.sastechnologies.com" 
                       class="teal-text hoverline">SAS Technologies</a></span>
                 </p>
               </div>
