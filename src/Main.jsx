@@ -35,7 +35,7 @@ return(
                     <li><b>Databases:</b> MySQL, NoSQL</li>
                     <li><b>Libraries:</b> NumPy, Pandas, OpenCV</li>
                     <li><b>Frameworks:</b> React, Flask, DataTables, Node.js, Bootstrap, Apache</li>
-                    <li><b>Tools & Technologies:</b> Wodrpress, Git, Docker, AWS, WinSCP, Unity Engine, Netlify</li>
+                    <li><b>Tools & Technologies:</b> Wodrpress, Git, Docker, AWS, WinSCP, Unity Engine, Android Studio, Netlify</li>
                 </ul>
                 <p>
                 Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.   
@@ -46,6 +46,7 @@ return(
 
         <section id="experience" className="section scrollspy">
             <h2 className="mainHeader-heading">Experience</h2>
+            <br/>
             <div class="container">
                 <div class="card">
                 <div class="card-content">
@@ -148,8 +149,76 @@ return(
         </div>
             </div>
         </section>
-        <section>
+        <section id="education" className="section scrollspy">
+            <h2 className="mainHeader-heading">Education</h2>
+            <div className="container">
+                <div className="row">
+                    <div class="col s12 m6 l6">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>
+                                    <span class="card-title"><a href="https://www.farmingdale.edu/" class="teal-text hoverline">Farmingdale State College</a></span>
+                                </p>
+                                <p class="brown-text">Farmingdale, NY</p>
+                                <p>
+                                    <b>Degree: </b>Bachelor of Science in Computer Programming & Information Systems  
+                                <br/>
+                                    <b>GPA: </b>3.29/4.0
+                                </p>
 
+                                <ul>
+                                    <p>
+                                        <b>Relevant Courseworks:</b>
+                                        <ul>
+                                            <li>Web Database Development</li>
+                                            <li>Data Structures</li>
+                                            <li>Systems Analysis & Design</li>
+                                            <li>SQL Programming</li>
+                                            <li>Unix Operating Systems</li>
+                                            <li>Introduction to Algortihms</li>
+                                            <li>Cybersecurity</li>                    
+                                        </ul>
+                                    </p>
+                                </ul>
+                             </div>
+                        </div>
+
+                    </div>
+                    <div className="col s12 m6 16">
+                        <div className="card">
+                            <div className="card-content">
+                                <p>
+                                    <span className="card-title">
+                                        <a href="https://www.pace.edu/seidenberg" className="teal-text hoverline">Seidenberg School of Copmuter Science & Information Systems 
+                                        , Pace University</a>
+                                    </span>
+                                </p>
+                                <p>
+                                    <b>Degree: Masters of Science in Computer Science</b>
+                                    <br/>
+                                    <b>GPA:</b>3.44/4.0
+                                </p>
+
+                                <ul>
+                                <p>
+                                    <b>Relevant Courseworks:</b>
+                                    <ul>
+                                        <li>Algorithms</li>
+                                        <li>Database Management Systems</li>
+                                        <li>Internet Concepts & Structures</li>
+                                        <li>Python Programming</li>
+                                        <li>Game Programming</li>
+                                        <li>Artificial Intelligence</li>
+                                    </ul>
+                                </p> 
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
         </section>
 
 
