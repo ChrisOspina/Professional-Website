@@ -278,5 +278,18 @@ p{
       padding-left: 0px;
       padding-top: 64px;
     }
-}
-  
+
+    #contact a.btn-floating.btn-large {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+    }
+    #contact a:not(.btn-floating) {
+      text-align: center;
+      display: block;
+      left: initial;
+      bottom: initial;
+    }
+ 

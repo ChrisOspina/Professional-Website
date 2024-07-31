@@ -182,7 +182,6 @@ return(
                                 </ul>
                              </div>
                         </div>
-
                     </div>
                     <div className="col s12 m6 16">
                         <div className="card">
@@ -213,18 +212,21 @@ return(
                                 </ul>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-
-       
-        <br/>
+        <section id ="contact" className="section scrollspy">
+            <h2 className="mainHeader-heading">Contact Me</h2>
+            <div className="container">
+                <p>
+                    <a aria-label="Shoot me an Email" href="mailto:ChrisOspina99@gmail.com" 
+                    className="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+                        <i className="fa-regular fa-envelope"></i><a aria-label="Shoot me an Email" href="mailto:ChrisOspina99@gmail.com"
+                          className="hoverline">ChrisOspina99@gmail.com</a></a>
+                </p>    
+            </div>    
+        </section>
     </div>
 )
 }
