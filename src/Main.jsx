@@ -211,8 +211,7 @@ return(
                 </p>    
                 <p>
                   <a aria-label="Connect with me on LinkedIn" href="https://www.linkedin.com/in/christopher-ospina-311b68185">
-                  <i className="fa-brands fa-linkedin" title="Connect with me on LinkedIn"></i>
-                  </a>
+                  <i className="fa-brands fa-linkedin" title="Connect with me on LinkedIn"></i></a>
                 </p>
             </div>    
         </section>
