@@ -131,6 +131,7 @@ return(
         </div>
             </div>
         </section>
+
         <section id="education" className="section scrollspy">
             <h2 className="mainHeader-heading">Education</h2>
             <div className="container">
@@ -198,21 +199,27 @@ return(
                 </div>
             </div>
         </section>
+
         <section id ="contact" className="section scrollspy">
             <h2 className="mainHeader-heading">Contact Me</h2>
             <div className="contact_container">
-                <p>
+              <ul>
+              <li>
                     <a aria-label="Shoot me an Email" href="mailto:ChrisOspina99@gmail.com">
-                        <i className="fa-regular fa-envelope" title="Shoot me an Email"></i></a>
-                </p>
-                <p>
+                        <i className="fa-regular fa-envelope fa-lg" title="Shoot me an Email"></i></a>
+                </li>
+                <br/>
+                <li>
                   <a aria-label="Check out my projects on GitHub" href="https://github.com/ChrisOspina">
-                    <i className="fa-brands fa-github" title="Check out my projects on GitHub"></i></a>
-                </p>    
-                <p>
+                    <i className="fa-brands fa-github fa-lg" title="Check out my projects on GitHub"></i></a>
+                </li>    
+                <br/>
+                <li>
                   <a aria-label="Connect with me on LinkedIn" href="https://www.linkedin.com/in/christopher-ospina-311b68185">
-                  <i className="fa-brands fa-linkedin" title="Connect with me on LinkedIn"></i></a>
-                </p>
+                  <i className="fa-brands fa-linkedin fa-lg" title="Connect with me on LinkedIn"></i></a>
+                </li>
+              </ul>
+              
             </div>    
         </section>
     </div>

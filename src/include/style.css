@@ -92,7 +92,7 @@ img{
 }
 ul{
     display: block;
-    list-style-type: disc;
+    list-style-type: none;
     margin-block-start: 1em;
     margin-block-end: 1em;
     padding-inline-start: 40px;
@@ -218,8 +218,6 @@ p{
   #experience span.card-title a {
     margin: 0;
   }
-  
-  
 
   .card-action span {
     font-size: 85%;
@@ -291,5 +289,22 @@ p{
       display: block;
       left: initial;
       bottom: initial;
+      color: gray;
+      size: 1.5rem;
     }
+
+    #contact ul li:nth-child(1) a i:hover{
+      color: red;
+    }
+
+    #contact ul li:nth-child(3) a i:hover{
+      color: black;
+    }
+
+    #contact ul li:nth-child(5) a i:hover{
+      color: navy;
+    }
+
+    
+
  
