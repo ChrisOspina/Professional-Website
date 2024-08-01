@@ -55,12 +55,6 @@ return(
                         <a href="https://www.nhca.com/"><img alt="National logo"
                             src={nchalogo} class="responsive-img center-block" /></a>
               </div>
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.nhca.com/"
-                      class="teal-text hoverline">National Healthcare Associates, Inc.</a></span>
-                </p>
-              </div>
             </div>
             <div class="role brown-text text-darken-2">Junior Systems Administrator</div>
             <ul>
@@ -91,12 +85,6 @@ return(
                 <a href="https://www.sastechnologies.com"><img alt="SAS logo"
                     src={saslogo} class="responsive-img center-block" /></a>
               </div>
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.sastechnologies.com" 
-                      class="teal-text hoverline">SAS Technologies</a></span>
-                </p>
-              </div>
             </div>
             <div class="role brown-text text-darken-2">Project Assistant</div>
             <ul>
@@ -121,12 +109,6 @@ return(
               <div class="col s12 m2">
                 <a href="https://www.simonsfoundation.org"><img alt="Simons logo"
                     src={simonslogo} class="responsive-img center-block" /></a>
-              </div>
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.simonsfoundation.org" 
-                      class="teal-text hoverline">Simons Foundation</a></span>
-                </p>
               </div>
             </div>
             <div class="role brown-text text-darken-2">Linux Systems Administrator Intern</div>
@@ -218,13 +200,20 @@ return(
         </section>
         <section id ="contact" className="section scrollspy">
             <h2 className="mainHeader-heading">Contact Me</h2>
-            <div className="container">
+            <div className="contact_container">
                 <p>
-                    <a aria-label="Shoot me an Email" href="mailto:ChrisOspina99@gmail.com" 
-                    className="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-                        <i className="fa-regular fa-envelope"></i><a aria-label="Shoot me an Email" href="mailto:ChrisOspina99@gmail.com"
-                          className="hoverline">ChrisOspina99@gmail.com</a></a>
+                    <a aria-label="Shoot me an Email" href="mailto:ChrisOspina99@gmail.com">
+                        <i className="fa-regular fa-envelope" title="Shoot me an Email"></i></a>
+                </p>
+                <p>
+                  <a aria-label="Check out my projects on GitHub" href="https://github.com/ChrisOspina">
+                    <i className="fa-brands fa-github" title="Check out my projects on GitHub"></i></a>
                 </p>    
+                <p>
+                  <a aria-label="Connect with me on LinkedIn" href="https://www.linkedin.com/in/christopher-ospina-311b68185">
+                  <i className="fa-brands fa-linkedin" title="Connect with me on LinkedIn"></i>
+                  </a>
+                </p>
             </div>    
         </section>
     </div>
