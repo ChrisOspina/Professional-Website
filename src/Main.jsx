@@ -3,7 +3,9 @@ import './include/style.css';
 import profile from './profile.jpg';
 import nchalogo from './assets/National_HCA_Logo_RGB.png';
 import saslogo from './assets/saslogo.png';
-import simonslogo from './assets/01-SF-primary-logo-color.png'
+import simonslogo from './assets/01-SF-primary-logo-color.png';
+import fsclogo from './assets/Farmingdale_State_College_logo_1.jpg';
+import pacelogo from './assets/Pace_SEIDENBERG_2Color_RGB_Centered-01-2.jpg';
 
 function Main(){
 return(
@@ -108,7 +110,7 @@ return(
             <div class="row">
               <div class="col s12 m2">
                 <a href="https://www.simonsfoundation.org"><img alt="Simons logo"
-                    src={simonslogo} class="responsive-img center-block" /></a>
+                    src={simonslogo} className="responsive-img center-block" /></a>
               </div>
             </div>
             <div class="role brown-text text-darken-2">Linux Systems Administrator Intern</div>
@@ -140,7 +142,8 @@ return(
                         <div class="card">
                             <div class="card-content">
                                 <p>
-                                    <span class="card-title"><a href="https://www.farmingdale.edu/" class="teal-text hoverline">Farmingdale State College</a></span>
+                                    <a href="https://www.farmingdale.edu/"><img alt="FSC logo"
+                                    src={fsclogo} className="responsive-img center-block"></img></a>
                                 </p>
                                 <p class="brown-text">Farmingdale, NY</p>
                                 <p>
@@ -170,9 +173,8 @@ return(
                         <div className="card">
                             <div className="card-content">
                                 <p>
-                                    <span className="card-title">
-                                        <a href="https://www.pace.edu/seidenberg" className="teal-text hoverline">Seidenberg School of Computer Science & Information Systems, Pace University</a>
-                                    </span>
+                                  <a href="https://www.pace.edu/seidenberg"><img alt="Pace logo"
+                                    src={pacelogo} className="responsive-img center-block"></img></a>
                                 </p>
                                 <p>
                                     <b>Degree: Masters of Science in Computer Science</b>
