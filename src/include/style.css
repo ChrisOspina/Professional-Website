@@ -263,6 +263,10 @@ p{
     width: auto;
   }
 
+  .project-img#med-x{
+    margin-bottom: 50px;
+  }
+
   /*because the PlatePerfect logo is too big*/
   .project-img#plateperf{
     width: 300px;

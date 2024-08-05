@@ -139,7 +139,7 @@ return(
                               <ul id="projects-list">
                                 <li>
                                 <a aria-label="Chest X-ray web app" href="https://github.com/ChrisOspina/2024S-Med-X">
-                                  <img className="project-img" alt="Chest X-ray web app" src={images.Medxlogo}/>
+                                  <img className="project-img" id="med-x" alt="Chest X-ray web app" src={images.Medxlogo}/>
                                 </a>
                                 </li>
                                 <li>
