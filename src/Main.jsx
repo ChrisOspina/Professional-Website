@@ -136,20 +136,18 @@ return(
                     <div class="col s12 m6 l6">
                         <div class="card">
                             <div class="card-content">
-                              <p>
-                                <a href="https://github.com/ChrisOspina/2024S-Med-X">
-                                  <img alt="Chest X-ray web app" src={images.Medxlogo}/>
+                              <ul id="projects-list">
+                                <li>
+                                <a aria-label="Chest X-ray web app" href="https://github.com/ChrisOspina/2024S-Med-X">
+                                  <img className="project-img" alt="Chest X-ray web app" src={images.Medxlogo}/>
                                 </a>
-                              </p>
-                              </div>
-                              </div></div>
-              
-
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
             </div>
-
-
-
-          </div>
         </section>
         
 
@@ -164,7 +162,7 @@ return(
                                     <a href="https://www.farmingdale.edu/"><img alt="FSC logo"
                                     src={images.fsclogo} className="responsive-img center-block"></img></a>
                                 </p>
-                                <p class="brown-text">Farmingdale, NY</p>
+                                <p>Farmingdale, NY</p>
                                 <p>
                                     <b>Degree: </b>Bachelor of Science in Computer Programming & Information Systems  
                                 <br/>
@@ -195,6 +193,7 @@ return(
                                   <a href="https://www.pace.edu/seidenberg"><img alt="Pace logo"
                                     src={images.pacelogo} className="responsive-img center-block"></img></a>
                                 </p>
+                                <p>New York, NY</p>
                                 <p>
                                     <b>Degree: Masters of Science in Computer Science</b>
                                     <br/>

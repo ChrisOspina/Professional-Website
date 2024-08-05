@@ -251,6 +251,20 @@ p{
     margin-left: 10px;
   }
 
+  #projects-list li{
+    list-style-type: none;
+  }
+
+  .project-img{
+    transition: .2s;
+    height: auto;
+    width: auto;
+  }
+
+  .project-img:hover{
+    transform: scale(1.1);
+  }
+
   @media (min-width: 1200px) {
     #experience .container {
       width: 860px;
