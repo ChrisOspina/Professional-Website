@@ -20,7 +20,7 @@ function ContactNav(){
     }
 
     const openMedX =()=>{
-       window.open("https://github.com/htmw/2024S-Med-X", "_self");
+       window.open("https://github.com/ChrisOspina/2024S-Med-X", "_self");
     }
 
     return(

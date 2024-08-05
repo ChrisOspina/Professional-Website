@@ -1,11 +1,6 @@
 import React from "react";
 import './include/style.css';
-import profile from './profile.jpg';
-import nchalogo from './assets/National_HCA_Logo_RGB.png';
-import saslogo from './assets/saslogo.png';
-import simonslogo from './assets/01-SF-primary-logo-color.png';
-import fsclogo from './assets/Farmingdale_State_College_logo_1.jpg';
-import pacelogo from './assets/Pace_SEIDENBERG_2Color_RGB_Centered-01-2.jpg';
+import * as images from './include/images';
 
 function Main(){
 return(
@@ -13,7 +8,7 @@ return(
         <div className="mainHeader">
         <article className="profile">
             <figure className="profile_img_container">
-                <img className="profile_pic" src={profile} alt="profile"/>
+                <img className="profile_pic" src={images.profile} alt="profile"/>
             </figure>
         </article>
         <br/>
@@ -45,7 +40,7 @@ return(
             </div>
         </section>
         <br/>
-
+        
         <section id="experience" className="section scrollspy">
             <h2 className="mainHeader-heading">Experience</h2>
             <br/>
@@ -55,7 +50,7 @@ return(
                     <div class="row">
                     <div class="col s12 m2">
                         <a href="https://www.nhca.com/"><img alt="National logo"
-                            src={nchalogo} class="responsive-img center-block" /></a>
+                            src={images.nhcalogo} class="responsive-img center-block" /></a>
               </div>
             </div>
             <div class="role brown-text text-darken-2">Junior Systems Administrator</div>
@@ -85,7 +80,7 @@ return(
             <div class="row">
               <div class="col s12 m2">
                 <a href="https://www.sastechnologies.com"><img alt="SAS logo"
-                    src={saslogo} class="responsive-img center-block" /></a>
+                    src={images.saslogo} class="responsive-img center-block" /></a>
               </div>
             </div>
             <div class="role brown-text text-darken-2">Project Assistant</div>
@@ -110,7 +105,7 @@ return(
             <div class="row">
               <div class="col s12 m2">
                 <a href="https://www.simonsfoundation.org"><img alt="Simons logo"
-                    src={simonslogo} className="responsive-img center-block" /></a>
+                    src={images.simonslogo} className="responsive-img center-block" /></a>
               </div>
             </div>
             <div class="role brown-text text-darken-2">Linux Systems Administrator Intern</div>
@@ -134,6 +129,30 @@ return(
             </div>
         </section>
 
+        <section id="projects" className="section scrollspy">
+          <h2 className="mainHeader-heading">Projects</h2>
+          <div className="container">
+            <div className="row">
+                    <div class="col s12 m6 l6">
+                        <div class="card">
+                            <div class="card-content">
+                              <p>
+                                <a href="https://github.com/ChrisOspina/2024S-Med-X">
+                                  <img alt="Chest X-ray web app" src={images.Medxlogo}/>
+                                </a>
+                              </p>
+                              </div>
+                              </div></div>
+              
+
+            </div>
+
+
+
+          </div>
+        </section>
+        
+
         <section id="education" className="section scrollspy">
             <h2 className="mainHeader-heading">Education</h2>
             <div className="container">
@@ -143,7 +162,7 @@ return(
                             <div class="card-content">
                                 <p>
                                     <a href="https://www.farmingdale.edu/"><img alt="FSC logo"
-                                    src={fsclogo} className="responsive-img center-block"></img></a>
+                                    src={images.fsclogo} className="responsive-img center-block"></img></a>
                                 </p>
                                 <p class="brown-text">Farmingdale, NY</p>
                                 <p>
@@ -174,7 +193,7 @@ return(
                             <div className="card-content">
                                 <p>
                                   <a href="https://www.pace.edu/seidenberg"><img alt="Pace logo"
-                                    src={pacelogo} className="responsive-img center-block"></img></a>
+                                    src={images.pacelogo} className="responsive-img center-block"></img></a>
                                 </p>
                                 <p>
                                     <b>Degree: Masters of Science in Computer Science</b>

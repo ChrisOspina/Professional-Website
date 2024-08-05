@@ -292,6 +292,7 @@ p{
       color: gray;
       size: 1.5rem;
     }
+    
 
     #contact ul li:nth-child(1) a i:hover{
       color: red;
