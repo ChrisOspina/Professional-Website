@@ -142,6 +142,11 @@ return(
                                   <img className="project-img" alt="Chest X-ray web app" src={images.Medxlogo}/>
                                 </a>
                                 </li>
+                                <li>
+                                  <a aria-label="Healthy Eating meal planner mobile app" href="https://github.com/ChrisOspina/Final-CS639">
+                                      <img className="project-img" id="plateperf" alt="PlatePerfect app" src={images.platePerflogo}/>
+                                  </a>
+                                </li>
                               </ul>
                             </div>
                           </div>

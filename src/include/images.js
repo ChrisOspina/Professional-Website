@@ -5,4 +5,5 @@ export { default as simonslogo } from "../assets/images/01-SF-primary-logo-color
 export { default as fsclogo} from "../assets/images/Farmingdale_State_College_logo_1.jpg";
 export { default as pacelogo} from "../assets/images/Pace_SEIDENBERG_2Color_RGB_Centered-01-2.jpg";
 export { default as Medxlogo} from '../assets/images/MedX_Logo.png';
+export { default as platePerflogo} from '../assets/images/platePerflogo.png'
 

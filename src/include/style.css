@@ -253,12 +253,19 @@ p{
 
   #projects-list li{
     list-style-type: none;
+    display: inline-block;
+    margin-right: 5px;
   }
 
   .project-img{
     transition: .2s;
     height: auto;
     width: auto;
+  }
+
+  /*because the PlatePerfect logo is too big*/
+  .project-img#plateperf{
+    width: 300px;
   }
 
   .project-img:hover{
