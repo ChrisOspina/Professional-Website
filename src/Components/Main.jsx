@@ -15,7 +15,7 @@ return(
             <h2 className="mainHeader-heading">About Me</h2>
         </div>
 
-        <section id="descripiton" className="section scrollspy">
+        <section id="about" className="section scrollspy">
             <div className="containter flow-text">
                 <p>I am currently an aspiring software engineer seeking oppurtunities to use the state-of-the-art technology to solve real-world problems. 
                 I enjoy problem-solving and coding. Always strive to bring 100% to the work I do.

@@ -1,57 +1,70 @@
 import React from "react";
-import {Navbar,Nav,Container} from "react-bootstrap";
+import {Navbar,Nav} from "react-bootstrap";
 import styles from "../include/Nav.module.scss"; 
 
 function ChrisNav(){
-    const openLinkedInProfile =()=>{
-        window.open("https://www.linkedin.com/in/christopher-ospina-311b68185/", "_self");
+    //The navbar will now redirect to the different sections
+    
+    //this will redirect to the About section 
+    const gotoAbout = () =>{
+        window.open("#about", "_self");
     }
 
-    const openGitHubProfile = () => {
-        window.open("https://github.com/ChrisOspina","_self");
+    //This will redirect to the Expierence section
+    const gotoExp = () =>{
+        window.open("#experience", "_self");
     }
 
-    const openEmailPopup = () => {
-        window.location.href = "mailto:ChrisOspina99@gmail.com";
+    //This will go to the skills section
+    const gotoSkills = () =>{
+        window.open("#skills", "_self");
+
     }
+
+    //This will go to the projects section
+    const gotoProjects = () =>{
+        window.open ("#projects", "_self");
+    }
+
+    //This will go to the contact section
+    const gotoContact = () =>{
+        window.open ("#contact", "_self");
+    }
+
+    //This function opens up the resume
     const openResume = () =>{
         window.open("https://docs.google.com/document/d/e/2PACX-1vT7D-WqYybf5U3y1wWVKvcPPKgSar9AYW2AvL9tMdf-L8uNWnxTovx_hdsMCX1sGA/pub","_self");
     }
 
-    const openMedX =()=>{
-       window.open("https://github.com/ChrisOspina/2024S-Med-X", "_self");
-    }
+
+
 
     return(
         <>
         <Navbar bg="light" expand="lg" className={styles.Navbar}>
-        <Container>
-                    <Nav className="nav-links">
-                                <Nav.Link className={styles.Link} onClick={openMedX}>
-                                    Med-X AI web application for chest X-rays
+        <div className="container">
+                    <div className="nav-links">
+                               
+                                <Nav.Link className={styles.Link} onClick={gotoAbout}> <i className="fa-solid fa-user"></i>
+                                   <span>About</span>
                                 </Nav.Link>
-                                <br/>
-                                <br/>
-                                <Nav.Link className={styles.Link} onClick={openLinkedInProfile}>
-                                    LinkedIn
+                                <Nav.Link className={styles.Link} onClick={gotoExp}><i class="fa-solid fa-briefcase"></i>
+                                    <span>Expierence</span>
                                 </Nav.Link>
-                                <br/>
-                                <br/>
-                                <Nav.Link  className={styles.Link} onClick={openGitHubProfile}>
-                                    GitHub
+                                <Nav.Link className={styles.Link} onClick={gotoProjects}><i className="fa-solid fa-chart-gantt"></i>
+                                    <span>Projects</span>
                                 </Nav.Link>
-                                <br/>
-                                <br/>
-                                <Nav.Link  className={styles.Link} onClick={openResume}>
-                                    View My Resume
+                                <Nav.Link className={styles.Link} onClick={gotoSkills}><i class="fa-solid fa-laptop"></i>
+                                    <span>Skills</span>
                                 </Nav.Link>
-                                <br/>
-                                <br/>
-                                <Nav.Link  className={styles.Link} onClick={openEmailPopup}>
-                                    Shoot Me an Email
+                                <Nav.Link  className={styles.Link} onClick={gotoContact}><i class="fa-regular fa-envelope"></i>
+                                    <span>Contact</span>
                                 </Nav.Link>
-                            </Nav>
-        </Container>
+                                <Nav.Link  className={styles.Link} onClick={openResume}><i className="fa-regular fa-file"></i>
+                                    <span>View My Resume</span>
+                                </Nav.Link>
+                            </div>
+        </div>
 
         </Navbar>
         </>
