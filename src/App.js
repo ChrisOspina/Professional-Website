@@ -4,7 +4,6 @@ import Footer from "./Components/Footer";
 import ChrisNav from './Components/ChrisNav';
 import MobileHamburgerMenu from './Components/MobileHamburgerMenu';
 
-
 function App() {
   return (
     <div className="App">

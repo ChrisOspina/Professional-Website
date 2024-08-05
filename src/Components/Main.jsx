@@ -5,18 +5,15 @@ import * as images from '../include/images';
 function Main(){
 return(
     <div className="mainContent">
-        <div className="mainHeader">
-        <article className="profile">
-            <figure className="profile_img_container">
-                <img className="profile_pic" src={images.profile} alt="profile"/>
-            </figure>
-        </article>
-        <br/>
-            <h2 className="mainHeader-heading">About Me</h2>
-        </div>
-
         <section id="about" className="section scrollspy">
-            <div className="containter flow-text">
+          <h2 className="mainHeader-heading">About Me</h2>
+          <article className="profile">
+              <figure className="profile_img_container">
+                  <img className="profile_pic" src={images.profile} alt="profile"/>
+              </figure>
+          </article>
+        <br/>
+            <div className="container flow-text">
                 <p>I am currently an aspiring software engineer seeking oppurtunities to use the state-of-the-art technology to solve real-world problems. 
                 I enjoy problem-solving and coding. Always strive to bring 100% to the work I do.
 
@@ -39,7 +36,7 @@ return(
                 </p>
             </div>
         </section>
-        <br/>
+
         
         <section id="experience" className="section scrollspy">
             <h2 className="mainHeader-heading">Experience</h2>
@@ -155,6 +152,9 @@ return(
             </div>
         </section>
         
+        <section id="skills" className="section scrollspy">
+        <h2 className="mainHeader-heading">Skills</h2>
+        </section>
 
         <section id="education" className="section scrollspy">
             <h2 className="mainHeader-heading">Education</h2>
