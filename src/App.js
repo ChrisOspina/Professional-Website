@@ -1,15 +1,14 @@
-import './App.css';
-import Header from "./header";
-import Main from "./Main";
-import Footer from "./Footer";
-import ContactNav from './ContactNav';
-import MobileHamburgerMenu from './MobileHamburgerMenu';
+import Header from "./Components/header";
+import Main from "./Components/Main";
+import Footer from "./Components/Footer";
+import ChrisNav from './Components/ChrisNav';
+import MobileHamburgerMenu from './Components/MobileHamburgerMenu';
 
 
 function App() {
   return (
     <div className="App">
-      <ContactNav/>
+      <ChrisNav/>
       <MobileHamburgerMenu/>
       <Header/>
       <Main/>

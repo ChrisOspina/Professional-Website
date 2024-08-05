@@ -1,6 +1,6 @@
 import React from "react";
-import './include/style.css';
-import * as images from './include/images';
+import '../include/style.css';
+import * as images from '../include/images';
 
 function Main(){
 return(

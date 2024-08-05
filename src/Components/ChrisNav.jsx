@@ -1,9 +1,8 @@
 import React from "react";
 import {Navbar,Nav,Container} from "react-bootstrap";
-import styles from "./include/Nav.module.scss"; 
-import './App.css';
+import styles from "../include/Nav.module.scss"; 
 
-function ContactNav(){
+function ChrisNav(){
     const openLinkedInProfile =()=>{
         window.open("https://www.linkedin.com/in/christopher-ospina-311b68185/", "_self");
     }
@@ -59,4 +58,4 @@ function ContactNav(){
     )
 }
 
-export default ContactNav;
+export default ChrisNav;
