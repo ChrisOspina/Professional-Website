@@ -264,7 +264,8 @@ p{
   }
 /*the med-x logo to align it with the other projects*/
   .project-img#med-x{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    height: 150px;
   }
 
   /*because the PlatePerfect logo is too big*/
@@ -274,6 +275,12 @@ p{
 
   .project-img:hover{
     transform: scale(1.1);
+  }
+
+  /*adjusting the height of the farmingdale logo*/
+  a img#fsc_logo{
+    width: auto;
+    height: 100px;
   }
 
   @media (min-width: 1200px) {

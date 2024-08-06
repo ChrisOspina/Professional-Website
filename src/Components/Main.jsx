@@ -12,9 +12,9 @@ return(
                   <img className="profile_pic" src={images.profile} alt="profile"/>
               </figure>
           </article>
-        <br/>
+            <br/>
             <div className="container flow-text">
-                <p>I am currently an aspiring software engineer seeking oppurtunities to use the state-of-the-art technology to solve real-world problems. 
+                <p>I am an aspiring software engineer seeking oppurtunities to use the state-of-the-art technology to solve real-world problems. 
                 I enjoy problem-solving and coding. Always strive to bring 100% to the work I do.
 
                 During my bachelor's and master's programs I have worked with technologies like C++, Python, Java, MySQL, The Unix Terminal, Node.js, and the Unity engine.
@@ -46,7 +46,7 @@ return(
                 <div class="card-content">
                     <div class="row">
                     <div class="col s12 m2">
-                        <a href="https://www.nhca.com/"><img alt="National logo"
+                        <a href="https://www.nhca.com/" target="_blank" rel="noreferrer"><img alt="National logo"
                             src={images.nhcalogo} class="responsive-img center-block" /></a>
               </div>
             </div>
@@ -76,7 +76,7 @@ return(
           <div class="card-content">
             <div class="row">
               <div class="col s12 m2">
-                <a href="https://www.sastechnologies.com"><img alt="SAS logo"
+                <a href="https://www.sastechnologies.com" target="_blank" rel="noreferrer"><img alt="SAS logo"
                     src={images.saslogo} class="responsive-img center-block" /></a>
               </div>
             </div>
@@ -101,7 +101,7 @@ return(
           <div class="card-content">
             <div class="row">
               <div class="col s12 m2">
-                <a href="https://www.simonsfoundation.org"><img alt="Simons logo"
+                <a href="https://www.simonsfoundation.org" target="_blank" rel="noreferrer"><img alt="Simons logo"
                     src={images.simonslogo} className="responsive-img center-block" /></a>
               </div>
             </div>
@@ -135,12 +135,12 @@ return(
                             <div class="card-content">
                               <ul id="projects-list">
                                 <li>
-                                <a aria-label="Chest X-ray web app" href="https://github.com/ChrisOspina/2024S-Med-X">
+                                <a aria-label="Chest X-ray web app" href="https://github.com/ChrisOspina/2024S-Med-X" target="_blank" rel="noreferrer">
                                   <img className="project-img" id="med-x" alt="Chest X-ray web app" src={images.Medxlogo}/>
                                 </a>
                                 </li>
                                 <li>
-                                  <a aria-label="Healthy Eating meal planner mobile app" href="https://github.com/ChrisOspina/Final-CS639">
+                                  <a aria-label="Healthy Eating meal planner mobile app" href="https://github.com/ChrisOspina/Final-CS639" target="_blank" rel="noreferrer">
                                       <img className="project-img" id="plateperf" alt="PlatePerfect app" src={images.platePerflogo}/>
                                   </a>
                                 </li>
@@ -153,7 +153,7 @@ return(
         </section>
         
         <section id="skills" className="section scrollspy">
-        <h2 className="mainHeader-heading">Skills</h2>
+          <h2 className="mainHeader-heading">Skills</h2>
         </section>
 
         <section id="education" className="section scrollspy">
@@ -164,8 +164,8 @@ return(
                         <div class="card">
                             <div class="card-content">
                                 <p>
-                                    <a href="https://www.farmingdale.edu/"><img alt="FSC logo"
-                                    src={images.fsclogo} className="responsive-img center-block"></img></a>
+                                    <a href="https://www.farmingdale.edu/" target="_blank" rel="noreferrer"><img id="fsc_logo" alt="FSC logo"
+                                    src={images.fsclogo}></img></a>
                                 </p>
                                 <p>Farmingdale, NY</p>
                                 <p>
@@ -195,8 +195,8 @@ return(
                         <div className="card">
                             <div className="card-content">
                                 <p>
-                                  <a href="https://www.pace.edu/seidenberg"><img alt="Pace logo"
-                                    src={images.pacelogo} className="responsive-img center-block"></img></a>
+                                  <a href="https://www.pace.edu/seidenberg" target="_blank" rel="noreferrer"><img alt="Pace logo"
+                                    src={images.pacelogo} id="pace_logo"></img></a>
                                 </p>
                                 <p>New York, NY</p>
                                 <p>
@@ -230,17 +230,17 @@ return(
             <div className="contact_container">
               <ul>
               <li>
-                    <a aria-label="Shoot me an Email" href="mailto:ChrisOspina99@gmail.com">
+                    <a aria-label="Shoot me an Email" href="mailto:ChrisOspina99@gmail.com" target="_blank" rel="noreferrer">
                         <i className="fa-regular fa-envelope fa-lg" title="Shoot me an Email"></i></a>
                 </li>
                 <br/>
                 <li>
-                  <a aria-label="Check out my projects on GitHub" href="https://github.com/ChrisOspina">
+                  <a aria-label="Check out my projects on GitHub" href="https://github.com/ChrisOspina" target="_blank" rel="noreferrer">
                     <i className="fa-brands fa-github fa-lg" title="Check out my projects on GitHub"></i></a>
                 </li>    
                 <br/>
                 <li>
-                  <a aria-label="Connect with me on LinkedIn" href="https://www.linkedin.com/in/christopher-ospina-311b68185">
+                  <a aria-label="Connect with me on LinkedIn" href="https://www.linkedin.com/in/christopher-ospina-311b68185" target="_blank" rel="noreferrer">
                   <i className="fa-brands fa-linkedin fa-lg" title="Connect with me on LinkedIn"></i></a>
                 </li>
               </ul>
