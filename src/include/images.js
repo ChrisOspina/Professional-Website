@@ -12,3 +12,4 @@ export { default as platePerflogo} from '../assets/images/projects/platePerflogo
 
 
 //Skills section
+
