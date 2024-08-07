@@ -38,6 +38,6 @@ export { default as dockerlogo } from '../assets/images/skills/technologies/dock
 export { default as gitlogo } from '../assets/images/skills/technologies/git.png';
 export { default as nodejslogo } from '../assets/images/skills/technologies/node.png';
 export { default as unitylogo} from '../assets/images/skills/technologies/Unity_Logo.png';
-
+export { default as wordpresslogo} from '../assets/images/skills/technologies/wordpress.png';
 /*Certifications will be added later*/
 

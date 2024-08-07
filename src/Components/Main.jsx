@@ -23,13 +23,12 @@ return(
 
                 I am passionate about developing complex applications that solve real-world problems impacting millions of users. 
                 </p>
-
                 <ul>
                     <li><b>Languages:</b> Python, Java, JavaScript, C, C++, C#, HTML/CSS, Sass, Php, Bash</li>
                     <li><b>Databases:</b> MySQL, NoSQL</li>
                     <li><b>Libraries:</b> NumPy, Pandas, OpenCV</li>
                     <li><b>Frameworks:</b> React, Flask, DataTables, Node.js, Bootstrap, Apache</li>
-                    <li><b>Tools & Technologies:</b> Wodrpress, Git, Docker, AWS, WinSCP, Unity Engine, Android Studio, Netlify</li>
+                    <li><b>Tools & Technologies:</b> Wordpress, Git, Docker, AWS, WinSCP, Unity Engine, Android Studio, Netlify</li>
                 </ul>
                 <p>
                 Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.   
@@ -37,7 +36,6 @@ return(
             </div>
         </section>
 
-        
         <section id="experience" className="section scrollspy">
             <h2 className="section-heading">Experience</h2>
             <br/>
@@ -157,50 +155,109 @@ return(
           <div className="container">
             <div className="card">
               <div className="card-content">
-                <h3 className="skill-section-head">Languages and Databases</h3>
-                <ul className="skill-list" id="language-list">
-                  <li>
-                    <img alt="Cpp" className="skill-logo" src={images.cpplogo}/>
-                    <p>C++</p>
-                  </li>
-                  <li>
-                    <img alt="CS" className="skill-logo" src={images.cslogo}/>
-                    <p>C#</p>
-                  </li>
-                  <li>
-                    <img alt="java" className="skill-logo" src={images.javalogo}/>
-                    <p>Java</p>
-                  </li>
-                  <li>
-                    <img alt="python" className="skill-logo" src={images.pythonlogo}/>
-                    <p>Python</p>
-                  </li>
-                  <li>
-                    <img alt="HTML5" className="skill-logo" src={images.htmllogo}/>
-                    <p>HTML5</p>
-                  </li>
-                  <li>
-                    <img alt="CSS3" className="skill-logo" src={images.csslogo}/>
-                    <p>CSS3</p>
-                  </li>
-                  <li>
-                    <img alt="javascript" className="skill-logo" src={images.javascriptlogo}/>
-                    <p>JavaScript</p>
-                  </li>
-                  <li>
-                    <img alt="php" className="skill-logo" src={images.phplogo}/>
-                    <p>Php</p>
-                  </li>
-                  <li>
-                    <img alt="mysql" className="skill-logo" src={images.mysqllogo}/>
-                    <p>MYSQL</p>
-                  </li>
-                  <li>
-                    <img alt="bash" className="skill-logo" src={images.shelllogo}/>
-                    <p>Shell Scripting</p>
-                  </li>
+                <div className="skill-section" id="languages">
+                  <h3 className="skill-section-head">Languages and Databases</h3>
+                  <ul className="skill-list" id="language-list">
+                    <li>
+                      <img alt="Cpp" className="skill-logo" src={images.cpplogo}/>
+                      <p className="skill-label">C++</p>
+                    </li>
+                    <li>
+                      <img alt="CS" className="skill-logo" src={images.cslogo}/>
+                      <p className="skill-label">C#</p>
+                    </li>
+                    <li>
+                      <img alt="java" className="skill-logo" src={images.javalogo}/>
+                      <p className="skill-label">Java</p>
+                    </li>
+                    <li>
+                      <img alt="python" className="skill-logo" src={images.pythonlogo}/>
+                      <p className="skill-label">Python</p>
+                    </li>
+                    <li>
+                      <img alt="HTML5" className="skill-logo" src={images.htmllogo}/>
+                      <p className="skill-label">HTML5</p>
+                    </li>
+                    <li>
+                      <img alt="CSS3" className="skill-logo" src={images.csslogo}/>
+                      <p className="skill-label">CSS3</p>
+                    </li>
+                    <li>
+                      <img alt="javascript" className="skill-logo" src={images.javascriptlogo}/>
+                      <p className="skill-label">JavaScript</p>
+                    </li>
+                    <li>
+                      <img alt="php" className="skill-logo" src={images.phplogo}/>
+                      <p className="skill-label">Php</p>
+                    </li>
+                    <li>
+                      <img alt="mysql" className="skill-logo" src={images.mysqllogo}/>
+                      <p className="skill-label">MYSQL</p>
+                    </li>
+                    <li>
+                      <img alt="bash" className="skill-logo" src={images.shelllogo}/>
+                      <p className="skill-label">Shell Scripting</p>
+                    </li>
 
-                </ul>
+                  </ul>
+                </div>
+
+                <div className="skill-section" id="libraries">
+                  <h3 className="skill-section-head">Libraries</h3>
+                  <ul className="skill-list" id="library-list">
+                  <li>
+                      <img alt="bootstrap" className="skill-logo" src={images.bootstrap}/>
+                      <p className="skill-label">Bootstrap</p>
+                  </li>
+                  <li>
+                      <img alt="numpy" className="skill-logo" src={images.numpylogo}/>
+                      <p className="skill-label">NumPy</p>
+                  </li>
+                  <li>
+                      <img alt="pandas" className="skill-logo" src={images.pandaslogo}/>
+                      <p className="skill-label">Pandas</p>
+                  </li>
+                  <li>
+                      <img alt="sk-learn" className="skill-logo" src={images.sckitlearn}/>
+                      <p className="skill-label">scikit-learn</p>
+                  </li>
+                  <li>
+                    <img alt="react" className="skill-logo" src={images.reactlogo}/>
+                    <p className="skill-label">React</p>
+                  </li>
+                  </ul>
+                </div>
+
+                <div className="skill-section" id="technologies">
+                  <h3 className="skill-section-head">Technologies</h3>
+                  <ul className="skill-list" id="technology-list">
+                    <li>
+                      <img alt="apache" className="skill-logo" src={images.apachelogo}/>
+                      <p className="skill-label">Apache</p>
+                    </li>
+                    <li>
+                      <img alt="docker" className="skill-logo" src={images.dockerlogo}/>
+                      <p className="skill-label">Docker</p>
+                    </li>
+                    <li>
+                      <img alt="git" className="skill-logo" src={images.gitlogo}/>
+                      <p className="skill-label">Git</p>
+                    </li>
+                    <li>
+                      <img alt="node" className="skill-logo" src={images.nodejslogo}/>
+                      <p className="skill-label">Node.js</p>
+                    </li>
+                    <li>
+                      <img alt="unity" className="skill-logo" src={images.unitylogo}/>
+                      <p className="skill-label">Unity engine</p>
+                    </li>
+                    <li> 
+                      <img alt="wordpress" className="skill-logo" src={images.wordpresslogo}/>
+                      <p className="skill-label">Wordpress</p>
+                    </li>
+
+                  </ul>
+                </div>
 
 
               </div>

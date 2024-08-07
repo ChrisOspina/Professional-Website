@@ -1,3 +1,5 @@
+
+/* header */
 .siteHeader{
     display: flex;
     flex-direction: column;
@@ -44,6 +46,8 @@ h2{
     background: black;
     color: white;
 }
+
+/* main */
 
 .mainContent{
     margin: 0 auto;
@@ -123,6 +127,8 @@ p{
     width: 4rem;
 }
 
+/* Nav */
+
 .contactNavheader{
     font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
@@ -195,6 +201,9 @@ p{
   .card .card-content p {
     padding: 2px 0 0;
   }
+
+  /*expierence section */
+
   #experience .card .col.s12.m2 a {
     display: block;
   }
@@ -256,6 +265,8 @@ p{
     margin-left: 10px;
   }
 
+  /*projects section*/
+
   #projects-list li{
     list-style-type: none;
     display: inline-block;
@@ -267,7 +278,8 @@ p{
     height: auto;
     width: auto;
   }
-/*the med-x logo to align it with the other projects*/
+
+ /* adjusting the med-x logo to align it with the other projects*/
   .project-img#med-x{
     margin-bottom: 100px;
     height: 150px;
@@ -282,6 +294,13 @@ p{
     transform: scale(1.1);
   }
 
+  /* skills section */
+
+  h3.skill-section-head{
+   font-size: 1.5rem;
+   text-decoration: underline;
+  }
+
   .skill-list li{
     list-style-type: none;
     display: inline-block;
@@ -289,11 +308,18 @@ p{
 
   }
 
-
   img.skill-logo{
     width: 50%;
     max-height: 150px;
   }
+
+  p.skill-label{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+  }
+
+  /*Education section */
 
   /*adjusting the height of the farmingdale logo*/
   a img#fsc_logo{
