@@ -6,7 +6,7 @@ function Main(){
 return(
     <div className="mainContent">
         <section id="about" className="section scrollspy">
-          <h2 className="mainHeader-heading">About Me</h2>
+          <h2 className="section-heading">About Me</h2>
           <article className="profile">
               <figure className="profile_img_container">
                   <img className="profile_pic" src={images.profile} alt="profile"/>
@@ -39,7 +39,7 @@ return(
 
         
         <section id="experience" className="section scrollspy">
-            <h2 className="mainHeader-heading">Experience</h2>
+            <h2 className="section-heading">Experience</h2>
             <br/>
             <div class="container">
                 <div class="card">
@@ -127,7 +127,7 @@ return(
         </section>
 
         <section id="projects" className="section scrollspy">
-          <h2 className="mainHeader-heading">Projects</h2>
+          <h2 className="section-heading">Projects</h2>
           <div className="container">
             <div className="row">
                     <div class="col s12 m6 l6">
@@ -153,11 +153,39 @@ return(
         </section>
         
         <section id="skills" className="section scrollspy">
-          <h2 className="mainHeader-heading">Skills</h2>
+          <h2 className="section-heading">Skills</h2>
+          <div className="container">
+            <div className="card">
+              <div className="card-content">
+                <h3 className="skill-section-head">Languages and Databases</h3>
+                <ul className="skill-list" id="language-list">
+                  <li>
+                    <img alt="python" className="skill-logo" src={images.pythonlogo}/>
+                    <p>Python</p>
+                  </li>
+                  <li>
+                    <img alt="HTML5" className="skill-logo" src={images.htmllogo}/>
+                    <p>HTML5</p>
+                  </li>
+                  <li>
+                    <img alt="CSS3" className="skill-logo" src={images.csslogo}/>
+                    <p>CSS3</p>
+                  </li>
+                  <li>
+                    <img alt="mysql" className="skill-logo" src={images.mysqllogo}/>
+                    <p>MYSQL</p>
+                  </li>
+                </ul>
+
+
+              </div>
+            </div>
+
+          </div>
         </section>
 
         <section id="education" className="section scrollspy">
-            <h2 className="mainHeader-heading">Education</h2>
+            <h2 className="section-heading">Education</h2>
             <div className="container">
                 <div className="row">
                     <div class="col s12 m6 l6">
@@ -226,7 +254,7 @@ return(
         </section>
 
         <section id ="contact" className="section scrollspy">
-            <h2 className="mainHeader-heading">Contact Me</h2>
+            <h2 className="section-heading">Contact Me</h2>
             <div className="contact_container">
               <ul>
               <li>
