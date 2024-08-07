@@ -231,6 +231,10 @@ return(
                 <div className="skill-section" id="technologies">
                   <h3 className="skill-section-head">Technologies</h3>
                   <ul className="skill-list" id="technology-list">
+                  <li>
+                      <img alt="Android Studio" className="skill-logo" src={images.androidstudio}/>
+                      <p className="skill-label">Android Studio</p>
+                    </li>
                     <li>
                       <img alt="apache" className="skill-logo" src={images.apachelogo}/>
                       <p className="skill-label">Apache</p>
@@ -255,6 +259,12 @@ return(
                       <img alt="wordpress" className="skill-logo" src={images.wordpresslogo}/>
                       <p className="skill-label">Wordpress</p>
                     </li>
+                    <li> 
+                      <img alt="VsCode" className="skill-logo" src={images.vscodelogo}/>
+                      <p className="skill-label">Visual Studio Code</p>
+                    </li>
+
+                   
 
                   </ul>
                 </div>

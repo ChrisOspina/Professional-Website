@@ -1,6 +1,6 @@
 export { default as profile } from "../assets/images/profile.jpg";
 //Expierence section
-export { default as nhcalogo } from "../assets/images/exp/01-SF-primary-logo-color.png";
+export { default as nhcalogo } from "../assets/images/exp/National_HCA_Logo_RGB.png";
 export { default as saslogo } from "../assets/images/exp/saslogo.png";
 export { default as simonslogo } from "../assets/images/exp/01-SF-primary-logo-color.png";
 //Education section
@@ -34,11 +34,14 @@ export { default as reactlogo} from '../assets/images/skills/libraries/react-ori
 export { default as sckitlearn} from '../assets/images/skills/libraries/sk-learn-logo-1-500x500.jpg';
 
 //technologies
+export { default as androidstudio} from '../assets/images/skills/technologies/androidstudio.jpg';
 export { default as apachelogo } from '../assets/images/skills/technologies/apache.jpeg';
 export { default as dockerlogo } from '../assets/images/skills/technologies/docker.png';
 export { default as gitlogo } from '../assets/images/skills/technologies/git.png';
 export { default as nodejslogo } from '../assets/images/skills/technologies/node.png';
 export { default as unitylogo} from '../assets/images/skills/technologies/Unity_Logo.png';
 export { default as wordpresslogo} from '../assets/images/skills/technologies/wordpress.png';
+export { default as vscodelogo} from  '../assets/images/skills/technologies/vscodelogo.png'
+
 /*Certifications will be added later*/
 
