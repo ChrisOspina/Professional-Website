@@ -40,9 +40,6 @@ function ChrisNav(){
         window.open("https://docs.google.com/document/d/e/2PACX-1vT7D-WqYybf5U3y1wWVKvcPPKgSar9AYW2AvL9tMdf-L8uNWnxTovx_hdsMCX1sGA/pub","_self");
     }
 
-
-
-
     return(
         <>
         <Navbar bg="light" expand="lg" className={styles.Navbar}>

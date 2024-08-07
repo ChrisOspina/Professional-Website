@@ -160,6 +160,18 @@ return(
                 <h3 className="skill-section-head">Languages and Databases</h3>
                 <ul className="skill-list" id="language-list">
                   <li>
+                    <img alt="Cpp" className="skill-logo" src={images.cpplogo}/>
+                    <p>C++</p>
+                  </li>
+                  <li>
+                    <img alt="CS" className="skill-logo" src={images.cslogo}/>
+                    <p>C#</p>
+                  </li>
+                  <li>
+                    <img alt="java" className="skill-logo" src={images.javalogo}/>
+                    <p>Java</p>
+                  </li>
+                  <li>
                     <img alt="python" className="skill-logo" src={images.pythonlogo}/>
                     <p>Python</p>
                   </li>
@@ -172,9 +184,22 @@ return(
                     <p>CSS3</p>
                   </li>
                   <li>
+                    <img alt="javascript" className="skill-logo" src={images.javascriptlogo}/>
+                    <p>JavaScript</p>
+                  </li>
+                  <li>
+                    <img alt="php" className="skill-logo" src={images.phplogo}/>
+                    <p>Php</p>
+                  </li>
+                  <li>
                     <img alt="mysql" className="skill-logo" src={images.mysqllogo}/>
                     <p>MYSQL</p>
                   </li>
+                  <li>
+                    <img alt="bash" className="skill-logo" src={images.shelllogo}/>
+                    <p>Shell Scripting</p>
+                  </li>
+
                 </ul>
 
 

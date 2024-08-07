@@ -14,7 +14,7 @@ export { default as platePerflogo } from '../assets/images/projects/platePerflog
 //Skills section
 
 //languages
-export { default as cslogo } from '../assets/images/skills/languages/c#logo.jpg';
+export { default as cslogo } from '../assets/images/skills/languages/cslogo.jpg';
 export { default as cpplogo } from '../assets/images/skills/languages/cpplogo.png';
 export { default as csslogo } from '../assets/images/skills/languages/css3.png';
 export { default as htmllogo } from '../assets/images/skills/languages/html5.png';
