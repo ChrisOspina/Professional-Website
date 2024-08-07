@@ -27,6 +27,7 @@ export { default as shelllogo} from '../assets/images/skills/languages/shell-log
 
 //libraries
 export { default as bootstrap } from '../assets/images/skills/libraries/bootstrap.png';
+export { default as datatables} from '../assets/images/skills/libraries/Datatables_logo_square.png';
 export { default as numpylogo } from '../assets/images/skills/libraries/numpy-logo-1-500x500.jpg';
 export { default as pandaslogo } from '../assets/images/skills/libraries/pandas-logo-2.png';
 export { default as reactlogo} from '../assets/images/skills/libraries/react-original-wordmark-icon-840x1024-vhmauxp6.png';

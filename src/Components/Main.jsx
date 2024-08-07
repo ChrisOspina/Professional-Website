@@ -13,7 +13,7 @@ return(
               </figure>
           </article>
             <br/>
-            <div className="container flow-text">
+            <div className="container_flow-text">
                 <p>I am an aspiring software engineer seeking oppurtunities to use the state-of-the-art technology to solve real-world problems. 
                 I enjoy problem-solving and coding. Always strive to bring 100% to the work I do.
 
@@ -48,7 +48,7 @@ return(
                             src={images.nhcalogo} class="responsive-img center-block" /></a>
               </div>
             </div>
-            <div class="role brown-text text-darken-2">Junior Systems Administrator</div>
+            <div class="role-text">Junior Systems Administrator</div>
             <ul>
               <li>
               Performed software maintenance & cleanup procedures to dispose of old stored data, ensuring hardware security & maintenance through configuring & encrypting laptops & Apple products for secure remote use.
@@ -63,9 +63,7 @@ return(
               </li>
             </ul>
           </div>
-          <div class="card-action">
-            <span>March 2020 - Jan 2023 | Valley Stream, NY</span>
-          </div>
+            <span className="date-text">March 2020 - Jan 2023 | Valley Stream, NY</span>
         </div>
         <br/>
         <br/>
@@ -78,7 +76,7 @@ return(
                     src={images.saslogo} class="responsive-img center-block" /></a>
               </div>
             </div>
-            <div class="role brown-text text-darken-2">Project Assistant</div>
+            <div class="role-text">Project Assistant</div>
             <ul>
               <li>
               Configure card readers for school residence halls, assisting in equipment tally for camera & card reader installations.
@@ -89,9 +87,7 @@ return(
                 <li><b>Tools:</b> DTools, Adobe Acrobat, Microsoft Office</li>
             </ul>
           </div>
-          <div class="card-action">
-            <span>Aug 2023 - Present | Hewlett, NY</span>
-          </div>
+            <span className="date-text">Aug 2023 - Present | Hewlett, NY</span>
           <br/>
           <br/>
         </div>
@@ -103,7 +99,7 @@ return(
                     src={images.simonslogo} className="responsive-img center-block" /></a>
               </div>
             </div>
-            <div class="role brown-text text-darken-2">Linux Systems Administrator Intern</div>
+            <div class="role-text">Linux Systems Administrator Intern</div>
             <ul>
               <li>
               Used the MacOS terminal and Git bash to host code on a remote repository
@@ -117,8 +113,8 @@ return(
                 <li><b>Tools:</b> Apache, Git/GitHub, Docker, Bash, Markdown, VSCode, Ubuntu, MacOS</li>
             </ul>
           </div>
-          <div class="card-action">
-            <span>Jun 2024 - Aug 2024 | New York, NY</span>
+          <div>
+            <span className="date-text">Jun 2024 - Aug 2024 | New York, NY</span>
           </div>
         </div>
             </div>
@@ -208,6 +204,10 @@ return(
                   <li>
                       <img alt="bootstrap" className="skill-logo" src={images.bootstrap}/>
                       <p className="skill-label">Bootstrap</p>
+                  </li>
+                  <li>
+                      <img alt="DataTables" className="skill-logo" src={images.datatables}/>
+                      <p className="skill-label">DataTables</p>
                   </li>
                   <li>
                       <img alt="numpy" className="skill-logo" src={images.numpylogo}/>
