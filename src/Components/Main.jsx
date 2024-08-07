@@ -263,16 +263,10 @@ return(
                       <img alt="VsCode" className="skill-logo" src={images.vscodelogo}/>
                       <p className="skill-label">Visual Studio Code</p>
                     </li>
-
-                   
-
                   </ul>
                 </div>
-
-
               </div>
             </div>
-
           </div>
         </section>
 
@@ -343,6 +337,13 @@ return(
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id ="certifications" className="section scrollspy">
+          <h2 className="section-heading">Certifications</h2>
+          <div className="container">
+            
+          </div>
         </section>
 
         <section id ="contact" className="section scrollspy">
