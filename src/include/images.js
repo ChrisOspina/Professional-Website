@@ -41,7 +41,8 @@ export { default as gitlogo } from '../assets/images/skills/technologies/git.png
 export { default as nodejslogo } from '../assets/images/skills/technologies/node.png';
 export { default as unitylogo} from '../assets/images/skills/technologies/Unity_Logo.png';
 export { default as wordpresslogo} from '../assets/images/skills/technologies/wordpress.png';
-export { default as vscodelogo} from  '../assets/images/skills/technologies/vscodelogo.png'
+export { default as vscodelogo} from  '../assets/images/skills/technologies/vscodelogo.png';
 
-/*Certifications will be added later*/
+//Certifications
+export {default as googlecybersecurity} from '../assets/images/googlecybersecruity.png';
 

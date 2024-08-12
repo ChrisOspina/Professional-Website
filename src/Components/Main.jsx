@@ -14,12 +14,12 @@ return(
           </article>
             <br/>
             <div className="container_flow-text">
-                <p>I am an aspiring software engineer seeking oppurtunities to use the state-of-the-art technology to solve real-world problems. 
-                I enjoy problem-solving and coding. Always strive to bring 100% to the work I do.
+                <p>I am an aspiring software engineer seeking opportunities to use the state-of-the-art technology to solve real-world problems. 
+                I enjoy problem-solving and coding and I always strive to bring 100% to the work I do.
 
                 During my bachelor's and master's programs I have worked with technologies like C++, Python, Java, MySQL, The Unix Terminal, Node.js, and the Unity engine.
                 I have over four years of professional work expierence at companies like National Healthcare and The Simons Foundation which helped me
-                strenghthen my expertise of MySQL, PhP and Linux.
+                strenghthen my expertise of MySQL, PhP and Unix.
 
                 I am passionate about developing complex applications that solve real-world problems impacting millions of users. 
                 </p>
@@ -56,8 +56,9 @@ return(
               <li>
               Organized server room to comply with safety protocols & test device functionality 
               </li>
-              <li>Automated employee report generation through web forms using PHP Form Builder, editing code with VS Code.</li>
-              <li>Developed web application to store & display employee, facility, procurement, & invoice data, automating data insertion from flat csv file into SQL database.</li>
+              <li>Facilitated employee report generation through web forms using PHP Form Builder, editing code with VS Code.</li>
+              <li>Developed a web application to store & display employee, facility, procurement, & invoice data</li>
+                <li>Automated data insertion from flat csv file into SQL database.</li>
               <li>
                 <b>Tools:</b> MySQL, VS Code, PHP, Apache, JavaScript, Bootstrap, DataTables
               </li>
