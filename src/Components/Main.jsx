@@ -2,6 +2,7 @@ import React from "react";
 import '../include/style.css';
 import * as images from '../include/images';
 
+
 function Main(){
 return(
     <div className="mainContent">
@@ -343,27 +344,42 @@ return(
         <section id ="certifications" className="section scrollspy">
           <h2 className="section-heading">Certifications</h2>
           <div className="container">
-            
+          <div className="card">
+              <div className="card-content">
+                <div className="skill-section" id="certifications">
+                  <ul className="skill-list">
+                    <li>
+                      <img alt="Google Cybersecurity" className= "cert-logo" src={images.googlecybersecurity}/>
+                      <p className="cert-label">Google Cybersecurity</p>
+                    </li>
+                    <li>
+                      <img alt="Pace University Customer Service Training" id="customer-service" className= "cert-logo" src={images.customerservice}/>
+                      <p className="cert-label">Pace University Customer Service Training</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>      
           </div>
         </section>
 
         <section id ="contact" className="section scrollspy">
             <h2 className="section-heading">Contact Me</h2>
             <div className="contact_container">
-              <ul>
-              <li>
-                    <a aria-label="Shoot me an Email" href="mailto:ChrisOspina99@gmail.com" target="_blank" rel="noreferrer">
-                        <i className="fa-regular fa-envelope fa-lg" title="Shoot me an Email"></i></a>
+              <ul id = 'contact-ul'>
+              <li className = "contact-li">
+                    <a data-tooltip="Shoot me an Email" href="mailto:ChrisOspina99@gmail.com" target="_blank" rel="noreferrer">
+                    <i className="fa-regular fa-envelope fa-lg li-icon"></i></a>
                 </li>
                 <br/>
-                <li>
-                  <a aria-label="Check out my projects on GitHub" href="https://github.com/ChrisOspina" target="_blank" rel="noreferrer">
-                    <i className="fa-brands fa-github fa-lg" title="Check out my projects on GitHub"></i></a>
+                <li classname = "contact-li">
+                  <a data-toggle="tooltip" title="Check out my projects on GitHub" href="https://github.com/ChrisOspina" target="_blank" rel="noreferrer">
+                    <i className="fa-brands fa-github fa-lg li-icon"></i></a>
                 </li>    
                 <br/>
                 <li>
-                  <a aria-label="Connect with me on LinkedIn" href="https://www.linkedin.com/in/christopher-ospina-311b68185" target="_blank" rel="noreferrer">
-                  <i className="fa-brands fa-linkedin fa-lg" title="Connect with me on LinkedIn"></i></a>
+                  <a data-tooltip="Connect with me on LinkedIn" href="https://www.linkedin.com/in/christopher-ospina" target="_blank" rel="noreferrer">
+                  <i className="fa-brands fa-linkedin fa-lg li-icon" title="Connect with me on LinkedIn"></i></a>
                 </li>
               </ul>
               

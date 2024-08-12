@@ -45,4 +45,5 @@ export { default as vscodelogo} from  '../assets/images/skills/technologies/vsco
 
 //Certifications
 export {default as googlecybersecurity} from '../assets/images/googlecybersecruity.png';
+export {default as customerservice} from '../assets/images/customer-service-program-badge_0.jpg';
 
