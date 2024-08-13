@@ -58,11 +58,11 @@ h2{
     text-align: start;
 }
 
-.container_flow-text p{
+.container-fluid p{
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    line-height: 2;
+    line-height: 1.5;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-size: 22px;
@@ -70,7 +70,7 @@ h2{
 }
 
 h2.section-heading{
-  padding-top: 70px;
+  padding-top: auto;
 }
 
 .mainContent .section::after{
@@ -289,6 +289,8 @@ p{
     max-height: 300px;
     max-width: 300px;
     margin-top: auto;
+    align-self: center;
+    margin-right: auto;
   }
 
  /* adjusting the med-x logo to align it with the other projects*/
@@ -410,12 +412,19 @@ p{
     img.skill-logo{
       margin-left: 6rem;
     }
+
+    p.skill-label{
+      margin-left: 7.5rem;
+    }
   }
   
   @media (max-width: 480px) {
     main {
       padding-left: 0px;
       padding-top: 64px;
+    }
+    .siteDescription{
+      text-align: center;
     }
       #contact-ul{
         margin-left: 3rem;
@@ -446,8 +455,32 @@ p{
         text-align: left;
         margin-bottom: 2rem;
       }
+
+      #customer-service{
+        margin-left: auto;
+      }
+
+      .siteFooter{
+        width: 100%;
+      }
+    }
+    @media (max-width: 1800px){
+      .nav-links{
+        scale: 1;
+      }
+
+      @media (max-width: 1200px){
+        .nav-links{
+          margin-left: -6rem;
+          scale: 1;
+          font-size: 12px;
+        }
+      }
+
+      
     }
 
+  
 
     
 

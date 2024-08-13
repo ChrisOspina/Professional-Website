@@ -3,7 +3,6 @@
     background-color: grey;
     width:100%;
     box-sizing: border-box;
-    overflow: hidden;
     position: fixed;
     z-index: 9999;
     padding-top: auto;
@@ -32,5 +31,26 @@
     .Navbar{
       display: none;
     }
+
   }
+
+  @media (max-width: 1800px){
+    .Navbar{
+      width:100%;
+      font-size: 13px;
+    }
+
+    @media (max-width:1200px){
+      .Navbar{
+        height:60px;
+        font-size: 12px;
+
+        a{}
+          margin-top: -1rem;
+        }
+      }
+  
+    }
+   
+  
  
