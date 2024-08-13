@@ -6,13 +6,18 @@
     overflow: hidden;
     position: fixed;
     z-index: 9999;
+    padding-top: auto;
+    height: 80px;
 
     a {
       font-size: 1.25em;
       color: white;
       display: flex;
       padding: 5px;
-      margin-left:10px;
+      margin-left: auto;
+      margin-top: 10px;
+      white-space: nowrap;
+    
   
       &:hover {
         color: black;

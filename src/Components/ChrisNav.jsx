@@ -46,7 +46,7 @@ function ChrisNav(){
 
     return(
         <>
-        <Navbar bg="light" expand="lg" className={styles.Navbar}>
+        <Navbar className={styles.Navbar} expand="xl">
         <div className="container">
                     <div className="nav-links">
                                

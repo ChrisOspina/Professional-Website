@@ -286,21 +286,12 @@ p{
 
   .project-img{
     transition: .2s;
-    height: auto;
-    width: auto;
+    max-height: 300px;
+    max-width: 300px;
+    margin-top: auto;
   }
 
  /* adjusting the med-x logo to align it with the other projects*/
-  .project-img#med-x{
-    margin-bottom: 100px;
-    height: 150px;
-  }
-
-  /*because the PlatePerfect logo is too big*/
-  .project-img#plateperf{
-    width: 300px;
-  }
-
   .project-img:hover{
     transform: scale(1.1);
   }
@@ -316,12 +307,11 @@ p{
     list-style-type: none;
     display: inline-block;
     margin-right: 5px;
-
   }
 
   img.skill-logo{
-    width: 50%;
-    max-height: 150px;
+    max-height: 100px;
+    max-width: fit-content;
   }
 
   p.skill-label{
@@ -332,8 +322,7 @@ p{
 
   img.cert-logo{
     align-content: center;
-    height: auto;
-    width: 250px;
+    scale: 1;
   }
   
   /*Certifications are slightly different*/
@@ -345,8 +334,7 @@ p{
 
   /*To reajust the size and margin of the customer service badge*/
   #customer-service{
-    height: 200px;
-    width: 200px;
+    scale: 0.75;
     align-self: center;
     margin-left: 50px;
   }
@@ -358,6 +346,43 @@ p{
     width: auto;
     height: 100px;
   }
+
+
+    /*contact section*/
+
+    .li-icon{
+      scale: 1.5;
+    }
+
+    #contact-ul{
+      margin-left: 7.5rem;
+      width: 70%;
+      display:flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    #contact a:not(.btn-floating) {
+      text-align: center;
+      display: block;
+      left: initial;
+      bottom: initial;
+      color: gray;
+      size: 1.5rem;
+    }
+
+    #contact ul li:nth-child(1) a i:hover{
+      color: red;
+    }
+
+    #contact ul li:nth-child(3) a i:hover{
+      color: black;
+    }
+
+    #contact ul li:nth-child(5) a i:hover{
+      color: blue;
+    }
 
   /*for mobile devices*/
 
@@ -380,64 +405,49 @@ p{
       line-height: 150%;
     }
   }
+
+  @media (min-width: 720px){
+    img.skill-logo{
+      margin-left: 6rem;
+    }
+  }
   
-  @media (max-width: 992px) {
+  @media (max-width: 480px) {
     main {
       padding-left: 0px;
       padding-top: 64px;
     }
-  }
+      #contact-ul{
+        margin-left: 3rem;
+      }
 
-    /*contact section*/
+      #contact ul li:nth-child(1) a i{
+        color: red;
+      }
+      #contact ul li:nth-child(3) a i{
+        color: black;
+      }
 
-    /*making the contact list items horizontal*/
+      #contact ul li:nth-child(5) a i{
+        color: blue;
+      }
+      h3.skill-section-head{
+        text-align: center;
+        text-decoration: underline;
+       }
 
-    .li-icon{
-      scale: 1.5;
+      img.skill-logo{
+        max-height: auto;
+        max-width: fit-content;
+        margin-left: 5rem;
+        margin-bottom: 2rem;
+      }
+      p.skill-label{
+        text-align: left;
+        margin-bottom: 2rem;
+      }
     }
 
-    #contact-ul{
-      margin-left: 6.5rem;
-      width: 70%;
-      display:flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-
-    #contact a:not(.btn-floating) {
-      text-align: center;
-      display: block;
-      left: initial;
-      bottom: initial;
-      color: gray;
-      size: 1.5rem;
-    }
-    
-
-    #contact ul li:nth-child(1) a i:hover{
-      color: red;
-    }
-
-    #contact ul li:nth-child(3) a i:hover{
-      color: black;
-    }
-
-    #contact ul li:nth-child(5) a i:hover{
-      color: blue;
-    }
-    .tooltip{
-      width: max-content;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #222;
-      color: white;
-      font-weight: bold;
-      padding: 5px;
-      border-radius: 4px;
-      font-size: 90%;
-    }
 
     
 

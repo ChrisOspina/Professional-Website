@@ -14,7 +14,7 @@ return(
               </figure>
           </article>
             <br/>
-            <div className="container_flow-text">
+            <div className="container-fluid">
                 <p>I am an aspiring software engineer seeking opportunities to use the state-of-the-art technology to solve real-world problems. 
                 I enjoy problem-solving and coding and I always strive to bring 100% to the work I do.
 
@@ -44,7 +44,7 @@ return(
                 <div class="card">
                 <div class="card-content">
                     <div class="row">
-                    <div class="col s12 m2">
+                    <div class="col sm 4">
                         <a href="https://www.nhca.com/" target="_blank" rel="noreferrer"><img alt="National logo"
                             src={images.nhcalogo} class="responsive-img center-block" /></a>
               </div>
@@ -73,7 +73,7 @@ return(
         <div class="card">
           <div class="card-content">
             <div class="row">
-              <div class="col s12 m2">
+              <div class="col sm 4">
                 <a href="https://www.sastechnologies.com" target="_blank" rel="noreferrer"><img alt="SAS logo"
                     src={images.saslogo} class="responsive-img center-block" /></a>
               </div>
@@ -96,7 +96,7 @@ return(
         <div class="card">
           <div class="card-content">
             <div class="row">
-              <div class="col s12 m2">
+              <div class="col sm 4">
                 <a href="https://www.simonsfoundation.org" target="_blank" rel="noreferrer"><img alt="Simons logo"
                     src={images.simonslogo} className="responsive-img center-block" /></a>
               </div>
@@ -304,10 +304,9 @@ return(
                                         </ul>
                                     </p>
                                 </ul>
-                             </div>
+                       
                         </div>
                     </div>
-                    <div className="col s12 m6 16">
                         <div className="card">
                             <div className="card-content">
                                 <p>
