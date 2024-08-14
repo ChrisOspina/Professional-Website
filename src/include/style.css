@@ -208,9 +208,14 @@ p{
   }
 
   /*expierence section */
+  .company-name{
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.35em;
+
+  }
 
   .role-text{
-    font-size: default;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.25em
   }
@@ -300,7 +305,7 @@ p{
 
   h3.skill-section-head{
    font-size: 1.5rem;
-   text-decoration: underline;
+   text-align: center;
   }
 
   .skill-list li{
@@ -310,34 +315,15 @@ p{
   }
 
   img.skill-logo{
-    scale: .45;
-    margin-left: auto;
-    padding: auto;
-  }
+    max-width: 50px;
+    max-height: 50px;
 
-  /*identifying certain logos to ensure that they are all the same size*/
-  #js-logo{
-    scale: 1
-  }
-
-  #php-logo{
-    scale:1;
-  }
-
-  #apache-logo{
-    scale: 0.35;
-
-  }
-
-  #docker-logo{
-    scale:0.65;
   }
 
   p.skill-label{
-    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    font-size: 22px;
+    text-align: center;
+    font-size: 16px;
   }
 
   img.cert-logo{
@@ -434,9 +420,6 @@ p{
     p.skill-label{
       margin-left: 3.5rem;
       text-align: center;
-    }
-    #technology-list{
-      margin-top: -10rem;
     }
 
   }

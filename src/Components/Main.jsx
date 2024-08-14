@@ -45,8 +45,7 @@ return(
                 <div class="card-content">
                     <div class="row">
                     <div class="col sm 4">
-                        <a href="https://www.nhca.com/" target="_blank" rel="noreferrer"><img alt="National logo"
-                            src={images.nhcalogo} class="responsive-img center-block" /></a>
+                        <a className="company-name" href="https://www.nhca.com/" target="_blank" rel="noreferrer">National Healthcare Associates Inc</a>
               </div>
             </div>
             <div class="role-text">Junior Systems Administrator</div>
@@ -72,8 +71,7 @@ return(
           <div class="card-content">
             <div class="row">
               <div class="col sm 4">
-                <a href="https://www.sastechnologies.com" target="_blank" rel="noreferrer"><img alt="SAS logo"
-                    src={images.saslogo} class="responsive-img center-block" /></a>
+                <a className="company-name" href="https://www.sastechnologies.com" target="_blank" rel="noreferrer">SAS Technologies</a>
               </div>
             </div>
             <div class="role-text">Project Assistant</div>
@@ -93,8 +91,7 @@ return(
           <div class="card-content">
             <div class="row">
               <div class="col sm 4">
-                <a href="https://www.simonsfoundation.org" target="_blank" rel="noreferrer"><img alt="Simons logo"
-                    src={images.simonslogo} className="responsive-img center-block" /></a>
+                <a className="company-name" href="https://www.simonsfoundation.org" target="_blank" rel="noreferrer">Simons Foundation</a>
               </div>
             </div>
             <div class="role-text">Linux Systems Administrator Intern</div>
@@ -150,6 +147,7 @@ return(
             <div className="card" id="languages">
               <div className="card-content">
                   <h3 className="skill-section-head">Languages and Databases</h3>
+                  <hr/>
                   <ul className="skill-list" id="language-list">
                     <li>
                       <img alt="Cpp" className="skill-logo" src={images.cpplogo}/>
@@ -198,6 +196,7 @@ return(
               <div className="card" id="libraries">
                 <div className="card-content">
                   <h3 className="skill-section-head">Libraries</h3>
+                  <hr/>
                   <ul className="skill-list" id="library-list">
                   <li>
                       <img alt="bootstrap" className="skill-logo" src={images.bootstrap}/>
@@ -230,14 +229,11 @@ return(
                 <div className="card" id="technologies">
                   <div className="card-content">
                     <h3 className="skill-section-head">Technologies</h3>
+                    <hr/>
                     <ul className="skill-list" id="technology-list">
                     <li>
                         <img alt="Android Studio" className="skill-logo" src={images.androidstudio}/>
                         <p className="skill-label">Android Studio</p>
-                      </li>
-                      <li>
-                        <img alt="apache" className="skill-logo" id="apache-logo" src={images.apachelogo}/>
-                        <p className="skill-label">Apache</p>
                       </li>
                       <li>
                         <img alt="docker" className="skill-logo" id="docker-logo" src={images.dockerlogo}/>
@@ -263,10 +259,14 @@ return(
                         <img alt="VsCode" className="skill-logo" src={images.vscodelogo}/>
                         <p className="skill-label">Visual Studio Code</p>
                       </li>
+                      <li>
+                        <img alt="apache" className="skill-logo" src={images.apachelogo}/>
+                        <p className="skill-label">Apache</p>
+                      </li>
                     </ul>
                   </div>
                 </div>
-                </div>
+          </div>
         </section>
 
         <section id="education" className="section scrollspy">
@@ -274,13 +274,12 @@ return(
             <div className="container">
                 <div className="row">
                     <div class="col s12 m6 l6">
-                        <div class="card">
-                            <div class="card-content">
-                                <p>
-                                    <a href="https://www.farmingdale.edu/" target="_blank" rel="noreferrer"><img id="fsc_logo" alt="FSC logo"
-                                    src={images.fsclogo}></img></a>
-                                </p>
+                        <div class="card" id="farmingdale">
+                            <div class="card-content">                    
+                                <a className="company-name" href="https://www.farmingdale.edu/" target="_blank" rel="noreferrer"
+                                >Farmingdale State College</a>
                                 <p>Farmingdale, NY</p>
+                                <hr/>
                                 <p>
                                     <b>Degree: </b>Bachelor of Science in Computer Programming & Information Systems  
                                 <br/>
@@ -289,7 +288,7 @@ return(
 
                                 <ul>
                                     <p>
-                                        <b>Relevant Courseworks:</b>
+                                        <b>Relevant Coursework:</b>
                                         <ul>
                                             <li>Web Database Development</li>
                                             <li>Data Structures</li>
@@ -305,12 +304,11 @@ return(
                         </div>
                     </div>
                         <div className="card">
-                            <div className="card-content">
-                                <p>
-                                  <a href="https://www.pace.edu/seidenberg" target="_blank" rel="noreferrer"><img alt="Pace logo"
-                                    src={images.pacelogo} id="pace_logo"></img></a>
-                                </p>
-                                <p>New York, NY</p>
+                            <div className="card-content" id="pace">
+                              <a className="company-name" href="https://www.pace.edu/seidenberg" target="_blank" rel="noreferrer"
+                              >Seidenberg School of Computer Science and Information Systems - Pace University</a>
+                              <p>New York, NY</p>
+                              <hr/>
                                 <p>
                                     <b>Degree: Masters of Science in Computer Science</b>
                                     <br/>
@@ -319,7 +317,7 @@ return(
 
                                 <ul>
                                 <p>
-                                    <b>Relevant Courseworks:</b>
+                                    <b>Relevant Coursework:</b>
                                     <ul>
                                         <li>Algorithms</li>
                                         <li>Database Management Systems</li>

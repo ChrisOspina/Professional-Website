@@ -1,8 +1,5 @@
 export { default as profile } from "../assets/images/profile.jpg";
-//Expierence section
-export { default as nhcalogo } from "../assets/images/exp/National_HCA_Logo_RGB.png";
-export { default as saslogo } from "../assets/images/exp/saslogo.png";
-export { default as simonslogo } from "../assets/images/exp/01-SF-primary-logo-color.png";
+
 //Education section
 export { default as fsclogo } from "../assets/images/edu/Farmingdale_State_College_logo_1.jpg";
 export { default as pacelogo } from "../assets/images/edu/Pace_SEIDENBERG_2Color_RGB_Centered-01-2.jpg";
