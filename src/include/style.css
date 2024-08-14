@@ -317,14 +317,10 @@ p{
 
   /*identifying certain logos to ensure that they are all the same size*/
   #js-logo{
-    scale: 1;
+    scale: 1
   }
 
   #php-logo{
-    scale:1;
-  }
-
-  #pandas-logo{
     scale:1;
   }
 

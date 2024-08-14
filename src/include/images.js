@@ -31,7 +31,7 @@ export { default as datatables} from '../assets/images/skills/libraries/Datatabl
 export { default as numpylogo } from '../assets/images/skills/libraries/numpy-logo-1-500x500.jpg';
 export { default as pandaslogo } from '../assets/images/skills/libraries/pandas-logo-2.png';
 export { default as reactlogo} from '../assets/images/skills/libraries/react-original-wordmark-icon-840x1024-vhmauxp6.png';
-export { default as sckitlearn} from '../assets/images/skills/libraries/sk-learn-logo-1-500x500.jpg';
+export { default as sckitlearn} from '../assets/images/skills/libraries/sk-learn-logo-1-500x500.jpeg';
 
 //technologies
 export { default as androidstudio} from '../assets/images/skills/technologies/androidstudio.jpg';
