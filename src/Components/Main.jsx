@@ -151,9 +151,8 @@ return(
         <section id="skills" className="section scrollspy">
           <h2 className="section-heading">Skills</h2>
           <div className="container">
-            <div className="card">
+            <div className="card" id="languages">
               <div className="card-content">
-                <div className="skill-section" id="languages">
                   <h3 className="skill-section-head">Languages and Databases</h3>
                   <ul className="skill-list" id="language-list">
                     <li>
@@ -181,11 +180,11 @@ return(
                       <p className="skill-label">CSS3</p>
                     </li>
                     <li>
-                      <img alt="javascript" className="skill-logo" src={images.javascriptlogo}/>
+                      <img alt="javascript" className="skill-logo" id="js-logo" src={images.javascriptlogo}/>
                       <p className="skill-label">JavaScript</p>
                     </li>
                     <li>
-                      <img alt="php" className="skill-logo" src={images.phplogo}/>
+                      <img alt="php" className="skill-logo" id="php-logo" src={images.phplogo}/>
                       <p className="skill-label">Php</p>
                     </li>
                     <li>
@@ -199,8 +198,9 @@ return(
 
                   </ul>
                 </div>
-
-                <div className="skill-section" id="libraries">
+              </div>
+              <div className="card" id="libraries">
+                <div className="card-content">
                   <h3 className="skill-section-head">Libraries</h3>
                   <ul className="skill-list" id="library-list">
                   <li>
@@ -216,7 +216,7 @@ return(
                       <p className="skill-label">NumPy</p>
                   </li>
                   <li>
-                      <img alt="pandas" className="skill-logo" src={images.pandaslogo}/>
+                      <img alt="pandas" className="skill-logo" id="pandas-logo" src={images.pandaslogo}/>
                       <p className="skill-label">Pandas</p>
                   </li>
                   <li>
@@ -229,47 +229,48 @@ return(
                   </li>
                   </ul>
                 </div>
-
-                <div className="skill-section" id="technologies">
-                  <h3 className="skill-section-head">Technologies</h3>
-                  <ul className="skill-list" id="technology-list">
-                  <li>
-                      <img alt="Android Studio" className="skill-logo" src={images.androidstudio}/>
-                      <p className="skill-label">Android Studio</p>
-                    </li>
-                    <li>
-                      <img alt="apache" className="skill-logo" src={images.apachelogo}/>
-                      <p className="skill-label">Apache</p>
-                    </li>
-                    <li>
-                      <img alt="docker" className="skill-logo" src={images.dockerlogo}/>
-                      <p className="skill-label">Docker</p>
-                    </li>
-                    <li>
-                      <img alt="git" className="skill-logo" src={images.gitlogo}/>
-                      <p className="skill-label">Git</p>
-                    </li>
-                    <li>
-                      <img alt="node" className="skill-logo" src={images.nodejslogo}/>
-                      <p className="skill-label">Node.js</p>
-                    </li>
-                    <li>
-                      <img alt="unity" className="skill-logo" src={images.unitylogo}/>
-                      <p className="skill-label">Unity engine</p>
-                    </li>
-                    <li> 
-                      <img alt="wordpress" className="skill-logo" src={images.wordpresslogo}/>
-                      <p className="skill-label">Wordpress</p>
-                    </li>
-                    <li> 
-                      <img alt="VsCode" className="skill-logo" src={images.vscodelogo}/>
-                      <p className="skill-label">Visual Studio Code</p>
-                    </li>
-                  </ul>
-                </div>
               </div>
-            </div>
-          </div>
+
+                <div className="card" id="technologies">
+                  <div className="card-content">
+                    <h3 className="skill-section-head">Technologies</h3>
+                    <ul className="skill-list" id="technology-list">
+                    <li>
+                        <img alt="Android Studio" className="skill-logo" src={images.androidstudio}/>
+                        <p className="skill-label">Android Studio</p>
+                      </li>
+                      <li>
+                        <img alt="apache" className="skill-logo" id="apache-logo" src={images.apachelogo}/>
+                        <p className="skill-label">Apache</p>
+                      </li>
+                      <li>
+                        <img alt="docker" className="skill-logo" id="docker-logo" src={images.dockerlogo}/>
+                        <p className="skill-label">Docker</p>
+                      </li>
+                      <li>
+                        <img alt="git" className="skill-logo" src={images.gitlogo}/>
+                        <p className="skill-label">Git</p>
+                      </li>
+                      <li>
+                        <img alt="node" className="skill-logo" src={images.nodejslogo}/>
+                        <p className="skill-label">Node.js</p>
+                      </li>
+                      <li>
+                        <img alt="unity" className="skill-logo" src={images.unitylogo}/>
+                        <p className="skill-label">Unity engine</p>
+                      </li>
+                      <li> 
+                        <img alt="wordpress" className="skill-logo" src={images.wordpresslogo}/>
+                        <p className="skill-label">Wordpress</p>
+                      </li>
+                      <li> 
+                        <img alt="VsCode" className="skill-logo" src={images.vscodelogo}/>
+                        <p className="skill-label">Visual Studio Code</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
         </section>
 
         <section id="education" className="section scrollspy">
