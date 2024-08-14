@@ -282,10 +282,7 @@ return(
                                 <hr/>
                                 <p>
                                     <b>Degree: </b>Bachelor of Science in Computer Programming & Information Systems  
-                                <br/>
-                                    <b>GPA: </b>3.29/4.0
                                 </p>
-
                                 <ul>
                                     <p>
                                         <b>Relevant Coursework:</b>
@@ -311,8 +308,6 @@ return(
                               <hr/>
                                 <p>
                                     <b>Degree: Masters of Science in Computer Science</b>
-                                    <br/>
-                                    <b>GPA:</b>3.44/4.0
                                 </p>
 
                                 <ul>

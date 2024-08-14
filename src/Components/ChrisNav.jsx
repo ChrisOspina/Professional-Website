@@ -54,7 +54,7 @@ function ChrisNav(){
                                    <span>About</span>
                                 </Nav.Link>
                                 <Nav.Link className={styles.Link} onClick={gotoExp}><i class="fa-solid fa-briefcase"></i>
-                                    <span>Expierence</span>
+                                    <span>Experience</span>
                                 </Nav.Link>
                                 <Nav.Link className={styles.Link} onClick={gotoProjects}><i className="fa-solid fa-chart-gantt"></i>
                                     <span>Projects</span>
