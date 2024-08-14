@@ -330,7 +330,6 @@ p{
 
   #apache-logo{
     scale: 0.35;
-    padding-right: 3rem;
 
   }
 
@@ -437,8 +436,13 @@ p{
     }
 
     p.skill-label{
-      margin-left: 7.5rem;
+      margin-left: 3.5rem;
+      text-align: center;
     }
+    #technology-list{
+      margin-top: -10rem;
+    }
+
   }
   
   @media (max-width: 480px) {
@@ -453,16 +457,6 @@ p{
         margin-left: 3rem;
       }
 
-      #contact ul li:nth-child(1) a i{
-        color: red;
-      }
-      #contact ul li:nth-child(3) a i{
-        color: black;
-      }
-
-      #contact ul li:nth-child(5) a i{
-        color: blue;
-      }
       h3.skill-section-head{
         text-align: center;
         text-decoration: underline;
@@ -476,8 +470,12 @@ p{
       img.skill-logo{
         max-height: auto;
         width: 100%;
-      
       }
+
+      #apache-logo{
+        margin-right: 3rem;
+      }
+      
       p.skill-label{
         text-align: center;
       }

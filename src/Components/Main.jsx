@@ -67,8 +67,6 @@ return(
           </div>
             <span className="date-text">March 2020 - Jan 2023 | Valley Stream, NY</span>
         </div>
-        <br/>
-        <br/>
         
         <div class="card">
           <div class="card-content">
@@ -90,8 +88,6 @@ return(
             </ul>
           </div>
             <span className="date-text">Aug 2023 - Present | Hewlett, NY</span>
-          <br/>
-          <br/>
         </div>
         <div class="card">
           <div class="card-content">
