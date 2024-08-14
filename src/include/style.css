@@ -281,7 +281,6 @@ p{
   #projects-list li{
     list-style-type: none;
     display: inline-block;
-    margin-right: 5px;
   }
 
   .project-img{
@@ -313,6 +312,7 @@ p{
 
   img.skill-logo{
     scale: .45;
+
   }
 
   p.skill-label{
