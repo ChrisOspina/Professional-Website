@@ -308,18 +308,18 @@ p{
   .skill-list li{
     list-style-type: none;
     display: inline-block;
-    margin-right: 5px;
+   
   }
 
   img.skill-logo{
-    max-height: 100px;
-    max-width: fit-content;
+    scale: .45;
   }
 
   p.skill-label{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
+    font-size: 22px;
   }
 
   img.cert-logo{
