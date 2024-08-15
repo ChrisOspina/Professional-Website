@@ -367,7 +367,7 @@ return(
                 </li>    
                 <br/>
                 <li className="contact-li">
-                  <a title="Connect with me on LinkedIn" href="https://www.linkedin.com/in/christopher-ospina" target="_blank" rel="noreferrer">
+                  <a title="Connect with me on LinkedIn" href="https://www.linkedin.com/in/christopher-ospina-311b68185/" target="_blank" rel="noreferrer">
                   <i className="fa-brands fa-linkedin fa-lg li-icon" title="Connect with me on LinkedIn"></i></a>
                 </li>
               </ul>

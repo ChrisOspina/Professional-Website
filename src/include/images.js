@@ -37,6 +37,6 @@ export { default as wordpresslogo} from '../assets/images/skills/technologies/wo
 export { default as vscodelogo} from  '../assets/images/skills/technologies/vscodelogo.png';
 
 //Certifications
-export {default as googlecybersecurity} from '../assets/images/googlecybersecruity.png';
-export {default as customerservice} from '../assets/images/customer-service-program-badge_0.jpg';
+export {default as googlecybersecurity} from '../assets/images/certifications/googlecybersecruity.png';
+export {default as customerservice} from '../assets/images/certifications/badges-customer-service-enrollment-management.png';
 
