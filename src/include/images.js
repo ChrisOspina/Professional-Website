@@ -1,7 +1,7 @@
 export { default as profile } from "../assets/images/profile.jpg";
 
 //Projects section
-export { default as Medxlogo } from '../assets/images/projects/MedX_Logo.png';
+export { default as Medxlogo } from '../assets/images/projects/Med-X_Logo.png';
 export { default as platePerflogo } from '../assets/images/projects/platePerflogo.png';
 
 //Skills section

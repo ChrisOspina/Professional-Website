@@ -291,7 +291,7 @@ p{
 
   .project-img{
     transition: .2s;
-    scale: 1;
+    scale: .65;
     align-self: center;
   
   }
