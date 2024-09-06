@@ -339,6 +339,12 @@ p{
     font-size: 16px;
   }
 
+   img#caspio-logo{
+    scale: 1.5;
+    margin-right: 1.5rem;
+    
+  }
+
   /*To reajust the size and margin of the customer service badge*/
   #customer-service{
     scale: 0.75;

@@ -29,7 +29,7 @@ return(
                     <li><b>Databases:</b> MySQL, NoSQL</li>
                     <li><b>Libraries:</b> NumPy, Pandas, OpenCV</li>
                     <li><b>Frameworks:</b> React, Flask, DataTables, Node.js, Bootstrap, Apache</li>
-                    <li><b>Tools & Technologies:</b> Wordpress, Git, Docker, AWS, WinSCP, Unity Engine, Android Studio, Netlify</li>
+                    <li><b>Tools & Technologies:</b> Wordpress, Git, Docker, AWS, Jira, WinSCP, Unity Engine, Android Studio, Caspio, Netlify</li>
                 </ul>
                 <p>
                 Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.   
@@ -82,7 +82,7 @@ return(
               <li>
               Generate networking cable labels, programming security cameras by establishing circuit & configuring settings via app to ensure safety of institution & students.
               </li>
-                <li><b>Tools:</b> DTools, Adobe Acrobat, Microsoft Office</li>
+                <li><b>Tools:</b> DTools, Adobe Acrobat, Microsoft Office, Caspio</li>
             </ul>
           </div>
             <span className="date-text">Aug 2023 - Present | Hewlett, NY</span>
@@ -236,12 +236,24 @@ return(
                         <p className="skill-label">Android Studio</p>
                       </li>
                       <li>
+                        <img alt="apache" className="skill-logo" src={images.apachelogo}/>
+                        <p className="skill-label">Apache</p>
+                      </li>
+                      <li>
+                        <img alt="caspio" className="skill-logo" id="caspio-logo" src={images.caspio}/>
+                        <p className="skill-label">Caspio</p>
+                      </li>
+                      <li>
                         <img alt="docker" className="skill-logo" id="docker-logo" src={images.dockerlogo}/>
                         <p className="skill-label">Docker</p>
                       </li>
                       <li>
                         <img alt="git" className="skill-logo" src={images.gitlogo}/>
                         <p className="skill-label">Git</p>
+                      </li>
+                      <li>
+                        <img alt="jira" className="skill-logo" src={images.jiralogo}/>
+                        <p className="skill-label">Jira Software</p>
                       </li>
                       <li>
                         <img alt="node" className="skill-logo" src={images.nodejslogo}/>
@@ -258,11 +270,7 @@ return(
                       <li> 
                         <img alt="VsCode" className="skill-logo" src={images.vscodelogo}/>
                         <p className="skill-label">Visual Studio Code</p>
-                      </li>
-                      <li>
-                        <img alt="apache" className="skill-logo" src={images.apachelogo}/>
-                        <p className="skill-label">Apache</p>
-                      </li>
+                      </li>    
                     </ul>
                   </div>
                 </div>
