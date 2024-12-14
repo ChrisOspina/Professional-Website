@@ -2,7 +2,6 @@ import React from "react";
 import '../include/style.css';
 import * as images from '../include/images';
 
-
 function Main(){
 return(
     <div className="mainContent">
@@ -28,8 +27,8 @@ return(
                     <li><b>Languages:</b> Python, Java, JavaScript, C, C++, C#, HTML/CSS, Sass, Php, Bash</li>
                     <li><b>Databases:</b> MySQL, NoSQL</li>
                     <li><b>Libraries:</b> NumPy, Pandas, OpenCV</li>
-                    <li><b>Frameworks:</b> React, Flask, DataTables, Node.js, Bootstrap, Apache</li>
-                    <li><b>Tools & Technologies:</b> Wordpress, Git, Docker, AWS, Jira, WinSCP, Unity Engine, Android Studio, Caspio, Netlify</li>
+                    <li><b>Frameworks:</b> React, Flask, DataTables, Node.js, Bootstrap, Apache, Telerik Ui</li>
+                    <li><b>Tools & Technologies:</b> Wordpress, Git, Docker, Azure, Jira, WinSCP, Unity Engine, Android Studio, Netlify</li>
                 </ul>
                 <p>
                 Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.   
@@ -41,37 +40,62 @@ return(
             <h2 className="section-heading">Experience</h2>
             <br/>
             <div class="container">
+              <div class="card">
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col sm 4">
+                      <a class="company-name" href="https://www.saberin.com/"  target="_blank" rel="noreferrer">Saberin Systems</a>
+                    </div>
+                  </div>
+                  <div class="role-text">Professional Development Intern</div>
+                  <ul>
+                    <li>Develop a landing page application for the company’s data platform</li>
+                    <li>Utilize Debugging and best practices to ensure code works properly</li>
+                    <li>Troubleshoot issues with applications</li>
+                    <li>Create an Azure Service Bus trigger function to migrate data between applications</li>
+                    <li>Implement On behlaf of the User (OBO) flow to ensure that the user recieves their data</li>
+                    <li>
+                      <b>Tools:</b> C#, TelerikUI, Jira, BitBucket, Visual Studio, Azure
+                    </li>
+                  </ul>
+                  <div>
+                  <span class="date-text">Sep 2024 - Present | Hauppauge, NY</span>
+                  </div>
+                </div>
+              </div>
+
+
                 <div class="card">
                 <div class="card-content">
                     <div class="row">
-                    <div class="col sm 4">
-                        <a className="company-name" href="https://www.nhca.com/" target="_blank" rel="noreferrer">National Healthcare Associates Inc</a>
+                      <div class="col sm 4">
+                        <a class="company-name" href="https://www.nhca.com/" target="_blank" rel="noreferrer">National Healthcare Associates Inc</a>
+                      </div>
+                    </div>
+                  <div class="role-text">Junior Systems Administrator</div>
+                  <ul>
+                    <li>
+                    Performed software maintenance & cleanup procedures to dispose of old stored data, ensuring hardware security & maintenance through configuring & encrypting laptops & Apple products for secure remote use.
+                    </li>
+                    <li>
+                    Organized server room to comply with safety protocols & test device functionality 
+                    </li>
+                    <li>Facilitated employee report generation through web forms using PHP Form Builder, editing code with VS Code.</li>
+                    <li>Developed a web application to store & display employee, facility, procurement, & invoice data</li>
+                      <li>Automated data insertion from flat csv file into SQL database.</li>
+                    <li>
+                      <b>Tools:</b> MySQL, VS Code, PHP, Apache, JavaScript, Bootstrap, DataTables
+                    </li>
+                  </ul>
+                </div>
+                  <span class="date-text">March 2020 - Jan 2023 | Valley Stream, NY</span>
               </div>
-            </div>
-            <div class="role-text">Junior Systems Administrator</div>
-            <ul>
-              <li>
-              Performed software maintenance & cleanup procedures to dispose of old stored data, ensuring hardware security & maintenance through configuring & encrypting laptops & Apple products for secure remote use.
-              </li>
-              <li>
-              Organized server room to comply with safety protocols & test device functionality 
-              </li>
-              <li>Facilitated employee report generation through web forms using PHP Form Builder, editing code with VS Code.</li>
-              <li>Developed a web application to store & display employee, facility, procurement, & invoice data</li>
-                <li>Automated data insertion from flat csv file into SQL database.</li>
-              <li>
-                <b>Tools:</b> MySQL, VS Code, PHP, Apache, JavaScript, Bootstrap, DataTables
-              </li>
-            </ul>
-          </div>
-            <span className="date-text">March 2020 - Jan 2023 | Valley Stream, NY</span>
-        </div>
         
         <div class="card">
           <div class="card-content">
             <div class="row">
               <div class="col sm 4">
-                <a className="company-name" href="https://www.sastechnologies.com" target="_blank" rel="noreferrer">SAS Technologies</a>
+                <a class="company-name" href="https://www.sastechnologies.com" target="_blank" rel="noreferrer">SAS Technologies</a>
               </div>
             </div>
             <div class="role-text">Project Assistant</div>
@@ -85,13 +109,13 @@ return(
                 <li><b>Tools:</b> DTools, Adobe Acrobat, Microsoft Office, Caspio</li>
             </ul>
           </div>
-            <span className="date-text">Aug 2023 - Present | Hewlett, NY</span>
+            <span class="date-text">Aug 2023 - Sep 2024 | Hewlett, NY</span>
         </div>
         <div class="card">
           <div class="card-content">
             <div class="row">
               <div class="col sm 4">
-                <a className="company-name" href="https://www.simonsfoundation.org" target="_blank" rel="noreferrer">Simons Foundation</a>
+                <a class="company-name" href="https://www.simonsfoundation.org" target="_blank" rel="noreferrer">Simons Foundation</a>
               </div>
             </div>
             <div class="role-text">Linux Systems Administrator Intern</div>
