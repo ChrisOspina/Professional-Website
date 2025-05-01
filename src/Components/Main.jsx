@@ -47,23 +47,43 @@ return(
                       <a class="company-name" href="https://www.saberin.com/"  target="_blank" rel="noreferrer">Saberin Systems</a>
                     </div>
                   </div>
+                  <div>
                   <div class="role-text">Professional Development Intern</div>
                   <ul>
-                    <li>Develop a landing page application for the company’s data platform</li>
-                    <li>Utilize Debugging and best practices to ensure code works properly</li>
-                    <li>Troubleshoot issues with applications</li>
-                    <li>Create an Azure Service Bus trigger function to migrate data between applications</li>
-                    <li>Implement On behlaf of the User (OBO) flow to ensure that the user recieves their data</li>
+                    <li>Developed a landing page application for the company’s data platform</li>
+                    <li>Utilized Debugging and best practices to ensure code works properly</li>
+                    <li>Troubleshooted issues with applications</li>
+                    <li>Created an Azure Service Bus trigger function to migrate data between applications</li>
+                    <li>Implemented On behlaf of the User (OBO) flow to ensure that the user recieves their data</li>
                     <li>
-                      <b>Tools:</b> C#, TelerikUI, Jira, BitBucket, Visual Studio, Azure
+                      <b>Tools:</b> C#, TelerikUI, Jira, BitBucket, Visual Studio, Azure, .NET Framework
                     </li>
                   </ul>
                   <div>
-                  <span class="date-text">Sep 2024 - Present | Hauppauge, NY</span>
+                  <span class="date-text">Sep 2024 - Dec 2024 | Hauppauge, NY</span>
+                  </div>
+                 
+                  </div>
+                  <hr/>
+                  <div>
+                  <div class="role-text">Entry Level Developer</div>
+                  <ul>
+                    <li>Worked with other developers to discuss future improvements to existing AI applications</li>
+                    <li>Thoroughly tested and reviewed other developers’ code to determine whether a ticket is to be moved forward in the SDLC</li>
+                    <li>Troubleshooted issues with applications</li>
+                    <li>Utilized Api connectors to allow the company's central AI application to communicate with others</li>
+                    <li>Rectified programming errors from major updates to ensure the program works as intended.
+                    </li>
+                    <li>
+                      <b>Tools:</b> C#, TelerikUI, JavaScript, Tailwind CSS, Jira, BitBucket, Visual Studio, .NET Framework
+                    </li>
+                  </ul>
+                  <div>
+                  <span class="date-text">Sep 2024 - Dec 2024 | Hauppauge, NY</span>
+                  </div>
                   </div>
                 </div>
               </div>
-
 
                 <div class="card">
                 <div class="card-content">
@@ -222,30 +242,34 @@ return(
                   <h3 className="skill-section-head">Libraries</h3>
                   <hr/>
                   <ul className="skill-list" id="library-list">
-                  <li>
-                      <img alt="bootstrap" className="skill-logo" src={images.bootstrap}/>
-                      <p className="skill-label">Bootstrap</p>
-                  </li>
-                  <li>
-                      <img alt="DataTables" className="skill-logo" src={images.datatables}/>
-                      <p className="skill-label">DataTables</p>
-                  </li>
-                  <li>
-                      <img alt="numpy" className="skill-logo" src={images.numpylogo}/>
-                      <p className="skill-label">NumPy</p>
-                  </li>
-                  <li>
-                      <img alt="pandas" className="skill-logo" id="pandas-logo" src={images.pandaslogo}/>
-                      <p className="skill-label">Pandas</p>
-                  </li>
-                  <li>
-                      <img alt="sk-learn" className="skill-logo" src={images.sckitlearn}/>
-                      <p className="skill-label">scikit-learn</p>
-                  </li>
-                  <li>
-                    <img alt="react" className="skill-logo" src={images.reactlogo}/>
-                    <p className="skill-label">React</p>
-                  </li>
+                    <li>
+                        <img alt="bootstrap" className="skill-logo" src={images.bootstrap}/>
+                        <p className="skill-label">Bootstrap</p>
+                    </li>
+                    <li>
+                        <img alt="DataTables" className="skill-logo" src={images.datatables}/>
+                        <p className="skill-label">DataTables</p>
+                    </li>
+                    <li>
+                        <img alt="numpy" className="skill-logo" src={images.numpylogo}/>
+                        <p className="skill-label">NumPy</p>
+                    </li>
+                    <li>
+                        <img alt="pandas" className="skill-logo" id="pandas-logo" src={images.pandaslogo}/>
+                        <p className="skill-label">Pandas</p>
+                    </li>
+                    <li>
+                        <img alt="sk-learn" className="skill-logo" src={images.sckitlearn}/>
+                        <p className="skill-label">scikit-learn</p>
+                    </li>
+                    <li>
+                      <img alt="react" className="skill-logo" src={images.reactlogo}/>
+                      <p className="skill-label">React</p>
+                    </li>
+                    <li> 
+                        <img alt="tailwind" id="tailwind-logo" className="skill-logo" src={images.tailwind}/>
+                        <p className="skill-label">Tailwind CSS</p>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -263,6 +287,10 @@ return(
                         <img alt="apache" className="skill-logo" src={images.apachelogo}/>
                         <p className="skill-label">Apache</p>
                       </li>
+                      <li> 
+                        <img alt="blazor" className="skill-logo" src={images.blazor}/>
+                        <p className="skill-label">Blazor</p>
+                      </li>
                       <li>
                         <img alt="caspio" className="skill-logo" id="caspio-logo" src={images.caspio}/>
                         <p className="skill-label">Caspio</p>
@@ -279,6 +307,10 @@ return(
                         <img alt="jira" className="skill-logo" src={images.jiralogo}/>
                         <p className="skill-label">Jira Software</p>
                       </li>
+                      <li> 
+                        <img alt="dotnet" className="skill-logo" src={images.dotnet}/>
+                        <p className="skill-label"> .NET Framework</p>
+                      </li>
                       <li>
                         <img alt="node" className="skill-logo" src={images.nodejslogo}/>
                         <p className="skill-label">Node.js</p>
@@ -290,6 +322,10 @@ return(
                       <li> 
                         <img alt="wordpress" className="skill-logo" src={images.wordpresslogo}/>
                         <p className="skill-label">Wordpress</p>
+                      </li>
+                      <li> 
+                        <img alt="VisualStudio" className="skill-logo" src={images.visualstudio}/>
+                        <p className="skill-label">Visual Studio</p>
                       </li>
                       <li> 
                         <img alt="VsCode" className="skill-logo" src={images.vscodelogo}/>

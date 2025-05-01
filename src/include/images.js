@@ -25,17 +25,21 @@ export { default as numpylogo } from '../assets/images/skills/libraries/numpy-lo
 export { default as pandaslogo } from '../assets/images/skills/libraries/pandas-logo-2.png';
 export { default as reactlogo} from '../assets/images/skills/libraries/react-original-wordmark-icon-840x1024-vhmauxp6.png';
 export { default as sckitlearn} from '../assets/images/skills/libraries/sk-learn-logo-1-500x500.jpeg';
+export { default as tailwind} from '../assets/images/skills/libraries/tailwindlogo.png';
 
 //technologies
 export { default as androidstudio} from '../assets/images/skills/technologies/androidstudio.jpg';
 export { default as apachelogo } from '../assets/images/skills/technologies/apache.jpeg';
+export { default as blazor} from '../assets/images/skills/technologies/BrandBlazor_nohalo_1000x.png';
 export { default as caspio } from '../assets/images/skills/technologies/caspio.png';
 export { default as dockerlogo } from '../assets/images/skills/technologies/docker.png';
+export {default as dotnet} from '../assets/images/skills/technologies/Microsoft_.NET_logo.png';
 export { default as gitlogo } from '../assets/images/skills/technologies/git.png';
 export { default as jiralogo } from '../assets/images/skills/technologies/Jira_Logo.png';
 export { default as nodejslogo } from '../assets/images/skills/technologies/node.png';
 export { default as unitylogo} from '../assets/images/skills/technologies/Unity_Logo.png';
 export { default as wordpresslogo} from '../assets/images/skills/technologies/wordpress.png';
+export {default as visualstudio} from '../assets/images/skills/technologies/Visual_Studio_Icon_2022.png';
 export { default as vscodelogo} from  '../assets/images/skills/technologies/vscodelogo.png';
 
 //Certifications
