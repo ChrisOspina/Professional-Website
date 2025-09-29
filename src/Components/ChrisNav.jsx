@@ -18,41 +18,6 @@ import {
 } from "lucide-react";
 
 function ChrisNav() {
-  //The navbar will now redirect to the different sections
-
-  //this will redirect to the About section
-  const gotoAbout = () => {
-    window.open("#about", "_self");
-  };
-
-  //This will redirect to the Expierence section
-  const gotoExp = () => {
-    window.open("#experience", "_self");
-  };
-
-  //This will go to the skills section
-  const gotoSkills = () => {
-    window.open("#skills", "_self");
-  };
-
-  //This will go to the projects section
-  const gotoProjects = () => {
-    window.open("#projects", "_self");
-  };
-
-  //This will go to the contact section
-  const gotoContact = () => {
-    window.open("#contact", "_self");
-  };
-
-  const gotoEducation = () => {
-    window.open("#education", "_self");
-  };
-
-  const gotoCertifications = () => {
-    window.open("#certifications", "_self");
-  };
-
   //This function opens up the resume
   const openResume = () => {
     window.open(
@@ -70,7 +35,7 @@ function ChrisNav() {
       >
         <NavigationMenuList className={"flex items-center text-white"}>
           <NavigationMenuItem id="about">
-            <Link onClick={gotoAbout} className="mr-2 md:mr-4">
+            <Link href="/" className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <Store className="h-4 w-4" />
                 <span className="hidden md:block">About</span>
@@ -78,7 +43,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="exp">
-            <Link onClick={gotoExp} className="mr-2 md:mr-4">
+            <Link href="/experience" className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <BriefcaseBusiness className="h-4 w-4" />
                 <span className="hidden md:block">Experience</span>
@@ -86,7 +51,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="projects">
-            <Link onClick={gotoProjects} className="mr-2 md:mr-4">
+            <Link href="/projects" className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <Laptop className="h-4 w-4" />
                 <span className="hidden md:block">Projects</span>
@@ -94,7 +59,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="skills">
-            <Link onClick={gotoSkills} className="mr-2 md:mr-4">
+            <Link href="/skills" className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <Database className="h-4 w-4" />
                 <span className="hidden md:block">Skills</span>
@@ -102,7 +67,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="education">
-            <Link onClick={gotoEducation} className="mr-2 md:mr-4">
+            <Link href="/education" className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <GraduationCap className="h-4 w-4" />
                 <span className="hidden md:block">Education</span>
@@ -110,7 +75,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="certifications">
-            <Link onClick={gotoCertifications} className="mr-2 md:mr-4">
+            <Link href="/certifications" className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <Award className="h-4 w-4" />
                 <span className="hidden md:block">Certfications</span>
@@ -118,7 +83,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="contact">
-            <Link onClick={gotoContact} className="mr-2 md:mr-4">
+            <Link href="/contact" className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <CircleUserRound className="h-4 w-4" />
                 <span className="hidden md:block">Contact</span>
