@@ -3,7 +3,7 @@ import * as images from "../include/images";
 
 function Main() {
   return (
-    <div className="mainContent">
+    <div className="grid-background">
       <section id="about" className="section scrollspy">
         <h2 className="section-heading">About Me</h2>
         <article className="profile">

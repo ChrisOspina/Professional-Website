@@ -1,12 +1,21 @@
 import React from "react";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "./ui/navigation-menu";
+import { Link } from "@radix-ui/react-navigation-menu";
+import { Button } from "./ui/button";
+import {
+  Store,
+  BriefcaseBusiness,
+  Laptop,
+  Database,
+  GraduationCap,
+  Award,
+  CircleUserRound,
+  FileUser,
+} from "lucide-react";
 
 function ChrisNav() {
   //The navbar will now redirect to the different sections
@@ -53,18 +62,76 @@ function ChrisNav() {
   };
 
   return (
-    <>
-      <NavigationMenu>
+    <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+      <NavigationMenu className={"flex space-x-2 md:space-x-4"}>
         <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <NavigationMenuLink>Link</NavigationMenuLink>
-            </NavigationMenuContent>
+          <NavigationMenuItem id="about">
+            <Link onClick={gotoAbout} className="mr-4">
+              <Button variant={"hidden"}>
+                <Store className="h-4 w-4" />
+                <span className="hidden md:block">About</span>
+              </Button>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem id="exp">
+            <Link onClick={gotoExp} className="mr-4">
+              <Button variant={"hidden"}>
+                <BriefcaseBusiness className="h-4 w-4" />
+                <span className="hidden md:block">Experience</span>
+              </Button>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem id="projects">
+            <Link onClick={gotoProjects} className="mr-4">
+              <Button variant={"hidden"}>
+                <Laptop className="h-4 w-4" />
+                <span className="hidden md:block">Projects</span>
+              </Button>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem id="skills">
+            <Link onClick={gotoSkills} className="mr-4">
+              <Button variant={"hidden"}>
+                <Database className="h-4 w-4" />
+                <span className="hidden md:block">Skills</span>
+              </Button>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem id="education">
+            <Link onClick={gotoEducation} className="mr-4">
+              <Button variant={"hidden"}>
+                <GraduationCap className="h-4 w-4" />
+                <span className="hidden md:block">Education</span>
+              </Button>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem id="certifications">
+            <Link onClick={gotoCertifications} className="mr-4">
+              <Button variant={"hidden"}>
+                <Award className="h-4 w-4" />
+                <span className="hidden md:block">Certfications</span>
+              </Button>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem id="contact">
+            <Link onClick={gotoContact} className="mr-4">
+              <Button variant={"hidden"}>
+                <CircleUserRound className="h-4 w-4" />
+                <span className="hidden md:block">Contact</span>
+              </Button>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem id="resume">
+            <Link onClick={openResume} className="mr-4">
+              <Button variant={"hidden"}>
+                <FileUser className="h-4 w-4" />
+                <span className="hidden md:block">Resume</span>
+              </Button>
+            </Link>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-    </>
+    </div>
   );
 }
 
