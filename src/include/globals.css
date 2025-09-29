@@ -1,0 +1,17 @@
+
+.profile-image-wrapper {
+  perspective: 1000px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image{
+  transform: rotateX(15deg) scale(1);
+  transition: transform 0.5s ease-out;
+  will-change: transform;
+}
+
+.profile-image.scrolled{
+  transform: rotateX(0) scale(1) translateY(40px);
+}

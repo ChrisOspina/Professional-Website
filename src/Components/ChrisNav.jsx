@@ -62,11 +62,15 @@ function ChrisNav() {
   };
 
   return (
-    <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-      <NavigationMenu className={"flex space-x-2 md:space-x-4"}>
-        <NavigationMenuList>
+    <div className="fixed top-0 left-0 w-full h-16 bg-gray-500 shadow-md z-50 flex items-center justify-between px-4">
+      <NavigationMenu
+        className={
+          "flex space-x-2 md:space-x-4 overflow-x-auto md:overflow-visible items-center"
+        }
+      >
+        <NavigationMenuList className={"flex items-center text-white"}>
           <NavigationMenuItem id="about">
-            <Link onClick={gotoAbout} className="mr-4">
+            <Link onClick={gotoAbout} className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <Store className="h-4 w-4" />
                 <span className="hidden md:block">About</span>
@@ -74,7 +78,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="exp">
-            <Link onClick={gotoExp} className="mr-4">
+            <Link onClick={gotoExp} className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <BriefcaseBusiness className="h-4 w-4" />
                 <span className="hidden md:block">Experience</span>
@@ -82,7 +86,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="projects">
-            <Link onClick={gotoProjects} className="mr-4">
+            <Link onClick={gotoProjects} className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <Laptop className="h-4 w-4" />
                 <span className="hidden md:block">Projects</span>
@@ -90,7 +94,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="skills">
-            <Link onClick={gotoSkills} className="mr-4">
+            <Link onClick={gotoSkills} className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <Database className="h-4 w-4" />
                 <span className="hidden md:block">Skills</span>
@@ -98,7 +102,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="education">
-            <Link onClick={gotoEducation} className="mr-4">
+            <Link onClick={gotoEducation} className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <GraduationCap className="h-4 w-4" />
                 <span className="hidden md:block">Education</span>
@@ -106,7 +110,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="certifications">
-            <Link onClick={gotoCertifications} className="mr-4">
+            <Link onClick={gotoCertifications} className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <Award className="h-4 w-4" />
                 <span className="hidden md:block">Certfications</span>
@@ -114,7 +118,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="contact">
-            <Link onClick={gotoContact} className="mr-4">
+            <Link onClick={gotoContact} className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <CircleUserRound className="h-4 w-4" />
                 <span className="hidden md:block">Contact</span>
@@ -122,7 +126,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="resume">
-            <Link onClick={openResume} className="mr-4">
+            <Link onClick={openResume} className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <FileUser className="h-4 w-4" />
                 <span className="hidden md:block">Resume</span>

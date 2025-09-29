@@ -6,11 +6,6 @@ function Main() {
     <div className="grid-background">
       <section id="about" className="section scrollspy">
         <h2 className="section-heading">About Me</h2>
-        <article className="profile">
-          <figure className="profile_img_container">
-            <img className="profile_pic" src={images.profile} alt="profile" />
-          </figure>
-        </article>
         <br />
         <div className="container-fluid">
           <p>

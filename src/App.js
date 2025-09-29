@@ -5,7 +5,7 @@ import ChrisNav from './Components/ChrisNav';
 
 function App() {
   return (
-    <div className="App">
+    <div className="pt-32 min-h-screen flex flex-col">
       <ChrisNav/>
       <Header/>
       <Main/>
