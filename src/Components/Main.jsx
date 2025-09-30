@@ -1,56 +1,79 @@
-import React from "react";
-import * as images from "../include/images";
+import "../include/globals.css";
 
 function Main() {
   return (
     <div className="grid-background">
-      <section id="about" className="section scrollspy">
-        <h2 className="section-heading">About Me</h2>
-        <br />
-        <div className="container-fluid">
-          <p>
-            I am a software engineer seeking opportunities to use the
-            state-of-the-art technology to solve real-world problems. I enjoy
-            problem-solving and coding and I always strive to bring 100% to the
-            work I do. During my bachelor's and master's programs I have worked
-            with technologies like C++, Python, Java, MySQL, The Unix Terminal,
-            Node.js, and the Unity engine. I have over four years of
-            professional work expierence at companies like National Healthcare
-            and The Simons Foundation which helped me strenghthen my expertise
-            of MySQL, PhP and Unix. I am passionate about developing complex
-            applications that solve real-world problems impacting millions of
-            users.
-          </p>
-          <ul>
-            <li>
-              <b>Languages:</b> Python, Java, JavaScript, C, C++, C#, HTML/CSS,
-              Sass, Php, Bash
-            </li>
-            <li>
-              <b>Databases:</b> MySQL, NoSQL
-            </li>
-            <li>
-              <b>Libraries:</b> NumPy, Pandas, OpenCV
-            </li>
-            <li>
-              <b>Frameworks:</b> React, Flask, DataTables, Node.js, Bootstrap,
-              Apache, Telerik Ui
-            </li>
-            <li>
-              <b>Tools & Technologies:</b> Wordpress, Git, Docker, Azure, Jira,
-              WinSCP, Unity Engine, Android Studio, Netlify
-            </li>
-          </ul>
-          <p>
-            Looking for an opportunity to work in a challenging position
-            combining my skills in Software Engineering, which provides
-            professional development, interesting experiences and personal
-            growth.
-          </p>
+      <section id="about" className="space-y-6 mx-auto text-center">
+        <h2 className="text-3xl font-semibold mb-6 text-gray-500 sm:underline-offset-8">
+          About Me
+        </h2>
+        <div className="border-box">
+          <div className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <p className="mx-auto max-w-[650px] md:text-lg text-gray-800 pb-4">
+              I am a software engineer seeking opportunities to use the
+              state-of-the-art technology to solve real-world problems. I enjoy
+              problem-solving and coding and I always strive to bring 100% to
+              the work I do. During my college career I have worked with
+              technologies like Python, Java, MySQL, React JS, Unix Operating
+              Systems, and Unity engine. I have over four years of professional
+              work expierence at companies like National Healthcare and Saberin
+              Software which also helped me strenghthen my technological
+              expertise. I am passionate about developing complex applications
+              that solve real-world problems impacting millions of users.
+            </p>
+          </div>
+          <div className="flex flex-row justify-between space-y-0 pb-2">
+            <p className="mx-auto max-w-[650px] md:text-lg text-gray-800 pb-4">
+              Looking for an opportunity to work in a challenging position
+              combining my skills in Software Engineering, which provides
+              professional development, interesting experiences and personal
+              growth.
+            </p>
+          </div>
+          <h2 className="text-3xl font-semibold mb-6 text-center text-gray-500 sm:underline-offset-8">
+            Skills
+          </h2>
+          <div className="mb-8">
+            <ul className="list-disc list-outside pl-6 space-y-2">
+              <li className="flex flex-col mb-4">
+                <span className="inline-block font-bold">Languages</span> C++,
+                Python, SQL, HTML, Java, JavaScript, PHP, C#, Bash,
+              </li>
+              <li className="flex flex-col mb-4">
+                <span className="inline-block font-bold">Software</span>{" "}
+                Microsoft Office, VS Code, Visual Studio, Unity, Android Studio,
+                Eclipse, GitHub, Docker, Vercel, Jira
+              </li>
+              <li className="flex flex-col mb-4">
+                <span className="inline-block font-bold">
+                  Operating Systems
+                </span>{" "}
+                Linux, Microsoft Windows, MacOS
+              </li>
+              <li className="flex flex-col mb-4">
+                <span className="inline-block font-bold">
+                  Cloud Enviromnents
+                </span>{" "}
+                AWS, Microsoft Azure, Google Cloud
+              </li>
+              <li className="flex flex-col mb-4">
+                <span className="inline-block font-bold">
+                  Libraries and Frameworks
+                </span>{" "}
+                React/Native/Angular, Tailwind CSS, Build Tools, Telerik,
+                Blazor, .NET Core, Relational Databases
+              </li>
+              <li className="flex flex-col mb-4">
+                <span className="inline-block font-bold">Soft Skills</span>{" "}
+                Problem-Solving, Teamwork, Written and Oral communication,
+                Adaptability, Time Management, Attention to Detail
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section id="experience" className="section scrollspy">
+      {/* <section id="experience" className="section scrollspy">
         <h2 className="section-heading">Experience</h2>
         <br />
         <div class="container">
@@ -713,7 +736,7 @@ function Main() {
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

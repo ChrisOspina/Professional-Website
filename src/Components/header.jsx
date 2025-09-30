@@ -28,7 +28,7 @@ function Header() {
     <section className="w-full pt-18 md:pt-24 pb-10">
       <div className="space-y-6 text-center">
         <div className="space-y-6 mx-auto">
-          <h1 className="text-6xl font-bold text-center mb-12">
+          <h1 className="text-6xl font-bold text-center mb-12 text-gray-600">
             Christopher Ospina
           </h1>
           <p className="mx-auto max-w-[600px] md:text-xl text-gray-500 font-semibold">
