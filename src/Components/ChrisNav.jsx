@@ -1,4 +1,4 @@
-import React from "react";
+//#region Imports
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -7,6 +7,7 @@ import {
 import { Link } from "@radix-ui/react-navigation-menu";
 import { Button } from "./ui/button";
 import {
+  MenuIcon,
   House,
   BriefcaseBusiness,
   Laptop,
@@ -16,8 +17,26 @@ import {
   CircleUserRound,
   FileUser,
 } from "lucide-react";
+import { useMediaQuery } from "../hooks/useMediaQuery";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "./ui/drawer";
+//#endregion
 
 function ChrisNav() {
+  //TODO: call the useMedia hook to determine if is desktop
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
+  // if (isDesktop) {
+  //   console.log("Desktop width");
+  // } else {
+  //   console.log("mobile width");
+  // }
+
   //This function opens up the resume
   const openResume = () => {
     window.open(
@@ -26,7 +45,7 @@ function ChrisNav() {
     );
   };
 
-  return (
+  return isDesktop ? (
     <div className="fixed top-0 left-0 w-full h-16 bg-gray-500 shadow-md z-50 flex items-center justify-between px-4">
       <NavigationMenu
         className={
@@ -100,6 +119,125 @@ function ChrisNav() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
+    </div>
+  ) : (
+    <div>
+      <Drawer direction="right">
+        <DrawerTrigger className="absolute top-4 left-4 z-50 p-2 rounded-md text-white">
+          <div className="relative">
+            <MenuIcon className="text-gray-800" />
+          </div>
+        </DrawerTrigger>
+        <DrawerContent>
+          <DrawerHeader>
+            <DrawerTitle className="text-center text-white font-bold">
+              Mobile Menu
+            </DrawerTitle>
+          </DrawerHeader>
+          <div className="px-4 flex flex-col">
+            <NavigationMenu
+              className={
+                "flex space-x-2 md:space-x-4 overflow-x-auto lg:overflow-visible items-center"
+              }
+            >
+              <NavigationMenuList
+                className={
+                  "flex flex-col space-y-2 divide-y-2 items-center text-white"
+                }
+              >
+                <NavigationMenuItem id="home">
+                  <Link href="/" className="w-full">
+                    <Button
+                      variant={"ghost"}
+                      className="flex w-full items-center justify-start"
+                    >
+                      <House className="h-4 w-4 mr-2" />
+                      <span>Home</span>
+                    </Button>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem id="exp">
+                  <Link href="/experience" className="w-full">
+                    <Button
+                      variant={"ghost"}
+                      className="flex w-full items-center justify-start"
+                    >
+                      <BriefcaseBusiness className="h-4 w-4 mr-2" />
+                      <span>Experience</span>
+                    </Button>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem id="projects">
+                  <Link href="/projects" className="w-full">
+                    <Button
+                      variant={"ghost"}
+                      className="flex w-full items-center justify-start"
+                    >
+                      <Laptop className="h-4 w-4 mr-2" />
+                      <span>Projects</span>
+                    </Button>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem id="skills">
+                  <Link href="/skills" className="w-full">
+                    <Button
+                      variant={"ghost"}
+                      className="flex w-full items-center justify-start"
+                    >
+                      <Database className="h-4 w-4 mr-2" />
+                      <span>Skills</span>
+                    </Button>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem id="education">
+                  <Link href="/education" className="w-full">
+                    <Button
+                      variant={"ghost"}
+                      className="flex w-full items-center justify-start"
+                    >
+                      <GraduationCap className="h-4 w-4 mr-2" />
+                      <span>Education</span>
+                    </Button>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem id="certifications">
+                  <Link href="/certifications" className="w-full">
+                    <Button
+                      variant={"ghost"}
+                      className="flex w-full items-center justify-start"
+                    >
+                      <Award className="h-4 w-4 mr-2" />
+                      <span>Certfications</span>
+                    </Button>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem id="contact">
+                  <Link href="/contact" className="w-full">
+                    <Button
+                      variant={"ghost"}
+                      className="flex w-full items-center justify-start"
+                    >
+                      <CircleUserRound className="h-4 w-4 mr-2" />
+                      <span>Contact</span>
+                    </Button>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem id="resume">
+                  <Link onClick={openResume} className="w-full">
+                    <Button
+                      variant={"ghost"}
+                      className="flex w-full items-center justify-start"
+                    >
+                      <FileUser className="h-4 w-4 mr-2" />
+                      <span>Resume</span>
+                    </Button>
+                  </Link>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </div>
+        </DrawerContent>
+      </Drawer>
     </div>
   );
 }
