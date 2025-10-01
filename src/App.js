@@ -2,25 +2,29 @@ import Header from "./Components/header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 import ChrisNav from './Components/ChrisNav';
+import HomePage from "./pages/HomePage";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import EducationPage from "./pages/EducationPage";
 
 const App=()=> {
   return (
     <BrowserRouter>
     {/*Navigation */}
-    <div className="pt-32 min-h-screen flex flex-col">
+    <nav className="pt-16 min-h-screen flex flex-col">
       <ChrisNav/>
-      <Header/>
-      <Main/>
-      <Footer/>
-    </div>
+    </nav>
+   
     {/*Routes*/}
     <Routes>
-      <Route></Route>
-      <Route></Route>
+      <Route path="/" element={<HomePage/>}/>
+      <Route path="/education" element={<EducationPage/>} />
     </Routes>
+      <footer>
+      <Footer/>
+    </footer>
     </BrowserRouter>
+   
   );
 }
 
