@@ -7,7 +7,7 @@ import {
 import { Link } from "@radix-ui/react-navigation-menu";
 import { Button } from "./ui/button";
 import {
-  Store,
+  House,
   BriefcaseBusiness,
   Laptop,
   Database,
@@ -30,15 +30,15 @@ function ChrisNav() {
     <div className="fixed top-0 left-0 w-full h-16 bg-gray-500 shadow-md z-50 flex items-center justify-between px-4">
       <NavigationMenu
         className={
-          "flex space-x-2 md:space-x-4 overflow-x-auto md:overflow-visible items-center"
+          "flex space-x-2 md:space-x-4 overflow-x-auto lg:overflow-visible items-center"
         }
       >
         <NavigationMenuList className={"flex items-center text-white"}>
           <NavigationMenuItem id="about">
             <Link href="/" className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
-                <Store className="h-4 w-4" />
-                <span className="hidden md:block">About</span>
+                <House className="h-4 w-4" />
+                <span className="hidden md:block">Home</span>
               </Button>
             </Link>
           </NavigationMenuItem>

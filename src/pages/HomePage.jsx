@@ -2,7 +2,7 @@ import { React, useRef, useEffect } from "react";
 import "../include/globals.css";
 import * as images from "../include/images";
 
-function HomePage() {
+const HomePage = () => {
   const imageRef = useRef();
 
   useEffect(() => {
@@ -121,6 +121,6 @@ function HomePage() {
       </section>
     </div>
   );
-}
+};
 
 export default HomePage;

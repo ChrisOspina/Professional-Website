@@ -1,7 +1,7 @@
 import React from "react";
 
-function CertificationsPage() {
+const CertificationsPage = () => {
   return <div>Certifications</div>;
-}
+};
 
 export default CertificationsPage;

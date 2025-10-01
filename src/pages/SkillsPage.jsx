@@ -1,7 +1,7 @@
 import React from "react";
 
-function SkillsPage() {
+const SkillsPage = () => {
   return <div>Skills</div>;
-}
+};
 
 export default SkillsPage;

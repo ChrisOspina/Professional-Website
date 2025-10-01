@@ -1,7 +1,7 @@
 import React from "react";
 
-function ProjectsPage() {
+const ProjectsPage = () => {
   return <div>Projects</div>;
-}
+};
 
 export default ProjectsPage;
