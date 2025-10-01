@@ -27,9 +27,6 @@ const App=()=> {
       <Route path="/education" element={<EducationPage/>} />
       <Route path="/certifications" element={<CertificationsPage/>} />
       <Route path="/contact" element={<ContactPage/>}/>
-
-
-      <Route></Route>
     </Routes>
     <footer>
       <Footer/>
