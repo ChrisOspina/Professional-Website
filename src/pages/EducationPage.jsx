@@ -1,81 +1,57 @@
 import React from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "../Components/ui/card";
+import { education } from "../data/education";
 
 const EducationPage = () => {
   return (
-    <div>
-      <section id="education" className="section scrollspy">
-        <h2 className="section-heading">Education</h2>
-        <div className="container">
-          <div className="row">
-            <div class="col s12 m6 l6">
-              <div class="card" id="farmingdale">
-                <div class="card-content">
-                  <a
-                    className="company-name"
-                    href="https://www.farmingdale.edu/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Farmingdale State College
-                  </a>
-                  <p>Farmingdale, NY</p>
-                  <hr />
-                  <p>
-                    <b>Degree: </b>Bachelor of Science in Computer Programming &
-                    Information Systems
-                  </p>
-                  <ul>
-                    <p>
-                      <b>Relevant Coursework:</b>
-                      <ul>
-                        <li>Web Database Development</li>
-                        <li>Data Structures</li>
-                        <li>Systems Analysis & Design</li>
-                        <li>SQL Programming</li>
-                        <li>Unix Operating Systems</li>
-                        <li>Introduction to Algortihms</li>
-                        <li>Cybersecurity</li>
-                      </ul>
-                    </p>
-                  </ul>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-content" id="pace">
-                  <a
-                    className="company-name"
-                    href="https://www.pace.edu/seidenberg"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Seidenberg School of Computer Science and Information
-                    Systems - Pace University
-                  </a>
-                  <p>New York, NY</p>
-                  <hr />
-                  <p>
-                    <b>Degree: Masters of Science in Computer Science</b>
-                  </p>
+    <div className="flex flex-col items-center grid-cols-2">
+      <div className="space-y-6 mx-auto text-center">
+        <h2 className="text-4xl font-semibold mb-6 text-gray-500 sm:underline-offset-8">
+          Education
+        </h2>
+      </div>
+      <div className="space-y-4 mb-16">
+        {education.map((school, i) => {
+          return (
+            <Card className={"w-full max-w-lg mb-16"} key={i} value={school.id}>
+              <CardHeader>
+                <CardTitle
+                  className={"text-3xl text-center mb-8 text-gray-700"}
+                >
+                  {school.schoolName}
+                </CardTitle>
+                <span className="text-gray-700 font-thin mb-8">
+                  {school.location}
+                </span>
 
-                  <ul>
-                    <p>
-                      <b>Relevant Coursework:</b>
-                      <ul>
-                        <li>Algorithms</li>
-                        <li>Database Management Systems</li>
-                        <li>Internet Concepts & Structures</li>
-                        <li>Python Programming</li>
-                        <li>Game Programming</li>
-                        <li>Artificial Intelligence</li>
-                      </ul>
-                    </p>
+                <CardDescription
+                  className={" text-lg text-center text-gray-700"}
+                >
+                  {school.degree}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-col mt-8">
+                  <span className="text-blue-600 font-semibold text-xl mb-2 ">
+                    Relevant Coursework:
+                  </span>
+                  <ul className="list-disc">
+                    {school.coursework.map((course) => {
+                      return <li className="text-gray-500">{course}</li>;
+                    })}
                   </ul>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+              </CardContent>
+            </Card>
+          );
+        })}
+      </div>
     </div>
   );
 };

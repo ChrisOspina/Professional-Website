@@ -18,8 +18,9 @@ export const education =[
     },
     {
         id: 1,
-        schoolName: "Seidenberg School of Computer Science and Information Systems - Pace University",
-        location: "New York, NY",
+        schoolName: "Pace University",
+        location: "New York & Pleasantville, NY",
+        degree: "Masters of Science in Computer Science",
         coursework:[
             "Algorithms",
             "Database Managment Systems",

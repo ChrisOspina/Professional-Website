@@ -11,7 +11,6 @@ import {
   House,
   BriefcaseBusiness,
   Laptop,
-  Database,
   GraduationCap,
   Award,
   CircleUserRound,
@@ -30,12 +29,6 @@ import {
 function ChrisNav() {
   //TODO: call the useMedia hook to determine if is desktop
   const isDesktop = useMediaQuery("(min-width: 768px)");
-
-  // if (isDesktop) {
-  //   console.log("Desktop width");
-  // } else {
-  //   console.log("mobile width");
-  // }
 
   //This function opens up the resume
   const openResume = () => {
@@ -74,14 +67,6 @@ function ChrisNav() {
               <Button variant={"hidden"}>
                 <Laptop className="h-4 w-4" />
                 <span className="hidden md:block">Projects</span>
-              </Button>
-            </Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem id="skills">
-            <Link href="/skills" className="mr-2 md:mr-4">
-              <Button variant={"hidden"}>
-                <Database className="h-4 w-4" />
-                <span className="hidden md:block">Skills</span>
               </Button>
             </Link>
           </NavigationMenuItem>
@@ -131,7 +116,7 @@ function ChrisNav() {
         <DrawerContent>
           <DrawerHeader>
             <DrawerTitle className="text-center text-white font-bold">
-              Mobile Menu
+              Menu
             </DrawerTitle>
           </DrawerHeader>
           <div className="px-4 flex flex-col">
@@ -175,17 +160,6 @@ function ChrisNav() {
                     >
                       <Laptop className="h-4 w-4 mr-2" />
                       <span>Projects</span>
-                    </Button>
-                  </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem id="skills">
-                  <Link href="/skills" className="w-full">
-                    <Button
-                      variant={"ghost"}
-                      className="flex w-full items-center justify-start"
-                    >
-                      <Database className="h-4 w-4 mr-2" />
-                      <span>Skills</span>
                     </Button>
                   </Link>
                 </NavigationMenuItem>

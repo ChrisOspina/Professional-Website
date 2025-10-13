@@ -19,8 +19,8 @@ export const experience=[
             "JavaScript", 
             "Tailwind CSS", 
         ],
-        startDate: new Date(2024, 12, 16),
-        endDate: new Date(2025, 4, 30),
+        startDate: new Date(2024, 11, 16),
+        endDate: new Date(2025, 3, 30),
         location: "Happauge, NY",
         url: "https://www.saberin.com/"
       
@@ -47,8 +47,8 @@ export const experience=[
             "JavaScript", 
             "Tailwind CSS", 
         ],
-        startDate: new Date(2024, 9, 16),
-        endDate: new Date(2024, 12, 13),
+        startDate: new Date(2024, 8, 16),
+        endDate: new Date(2024, 11, 13),
         location: "Happauge, NY",
         url: "https://www.saberin.com/"
     },
@@ -74,8 +74,8 @@ export const experience=[
             "Python",
             "Netlify",
         ],
-        startDate: new Date(2024, 6, 3),
-        endDate: new Date(2024, 8, 14),
+        startDate: new Date(2024, 5, 3),
+        endDate: new Date(2024, 7, 14),
         location: "New York, NY",
         url: "https://www.simonsfoundation.org/"
     },
@@ -97,8 +97,8 @@ export const experience=[
             "Caspio",
             "Tableau"
         ],
-        startDate: new Date(2023, 8, 8),
-        endDate: new Date(2024, 9, 12),
+        startDate: new Date(2023, 7, 8),
+        endDate: new Date(2024, 8, 12),
         location: "Hewlett, NY",
         url: "https://www.sastechnologies.com/",
     },
@@ -124,9 +124,9 @@ export const experience=[
             "Powershell",
             "WinSCP",
         ],
-        startDate: new Date(2020, 3, 23),
-        endDate: new Date(2023, 1, 10),
-        location: "Hewlett NY",
+        startDate: new Date(2020, 2, 23),
+        endDate: new Date(2023, 0, 10),
+        location: "Valley Stream, NY",
         url: "https://nhca.com/"
 
     }

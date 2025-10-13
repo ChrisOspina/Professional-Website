@@ -7,7 +7,6 @@ import './include/globals.css'
 import EducationPage from "./pages/EducationPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import ProjectsPage from "./pages/ProjectsPage";
-import SkillsPage from "./pages/SkillsPage";
 import CertificationsPage from "./pages/CertificationsPage";
 import ContactPage from "./pages/ContactPage";
 
@@ -23,7 +22,6 @@ const App=()=> {
       <Route path="/" element={<HomePage/>}/>
       <Route path="/experience" element={<ExperiencePage/>}/>
       <Route path="/projects" element={<ProjectsPage/>}/>
-      <Route path="/skills" element={<SkillsPage/>}/>
       <Route path="/education" element={<EducationPage/>} />
       <Route path="/certifications" element={<CertificationsPage/>} />
       <Route path="/contact" element={<ContactPage/>}/>
