@@ -33,7 +33,7 @@ const EducationPage = () => {
                 </span>
 
                 <CardDescription
-                  className={" text-lg text-center text-gray-700"}
+                  className={"text-lg text-center text-gray-700"}
                 >
                   {school.degree}
                 </CardDescription>

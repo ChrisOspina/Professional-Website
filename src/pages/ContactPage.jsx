@@ -1,9 +1,11 @@
 import React from "react";
+import ContactForm from "../Components/Contact-Form";
 
 const ContactPage = () => {
   return (
     <div>
-      {" "}
+      <ContactForm />
+      {/* {" "}
       <section id="contact" className="section scrollspy">
         <h2 className="section-heading">Contact Me</h2>
         <div className="contact_container">
@@ -45,7 +47,7 @@ const ContactPage = () => {
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
