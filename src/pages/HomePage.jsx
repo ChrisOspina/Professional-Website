@@ -57,16 +57,16 @@ const HomePage = () => {
         <div className="border-box">
           <div className="flex flex-row items-center justify-between space-y-0 pb-2">
             <p className="mx-auto max-w-[650px] md:text-lg text-gray-800 pb-4">
-              I am a software engineer seeking opportunities to use the
-              state-of-the-art technology to solve real-world problems. I enjoy
-              problem-solving and coding and I always strive to bring 100% to
-              the work I do. During my college career I have worked with
-              technologies like Python, Java, MySQL, React JS, Unix Operating
-              Systems, and Unity engine. I have over four years of professional
-              work expierence at companies like National Healthcare and Saberin
-              Software which also helped me strenghthen my technological
-              expertise. I am passionate about developing complex applications
-              that solve real-world problems impacting millions of users.
+              I am a software engineer with over four years of professional
+              experience seeking opportunities to use state-of-the-art
+              technology to solve real-world problems. I enjoy problem-solving
+              and coding, and I always strive to bring 100% to the work I do.
+              During my bachelor's in Computer Programming & Information Systems
+              as well as my master's in Computer Science, I have worked with
+              various technologies, including C++, Python, Java, and MySQL in
+              various platforms, including Unix, Azure, Node.js, and the Unity
+              engine. I am passionate about developing complex applications that
+              solve real-world problems impacting millions of users.
             </p>
           </div>
           <div className="flex flex-row justify-between space-y-0 pb-2">

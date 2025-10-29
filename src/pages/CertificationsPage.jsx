@@ -1,42 +1,54 @@
 import React from "react";
-import * as images from "../include/images.js";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "../Components/ui/card";
+import { certifications } from "../data/certifications.js";
 
 const CertificationsPage = () => {
   return (
-    <div>
-      {" "}
-      <section id="certifications" className="section scrollspy">
-        <h2 className="section-heading">Certifications</h2>
-        <div className="container">
-          <div className="card">
-            <div className="card-content">
-              <div className="skill-section" id="certifications">
-                <ul className="skill-list">
-                  <li>
-                    <img
-                      alt="Google Cybersecurity"
-                      className="cert-logo"
-                      src={images.googlecybersecurity}
-                    />
-                    <p className="cert-label">Google Cybersecurity</p>
-                  </li>
-                  <li>
-                    <img
-                      alt="Pace University Customer Service Training"
-                      id="customer-service"
-                      className="cert-logo"
-                      src={images.customerservice}
-                    />
-                    <p className="cert-label">
-                      Pace University Customer Service Training
-                    </p>
-                  </li>
-                </ul>
+    <div className="flex flex-col items-center grid-cols-2">
+      <div className="pace-y-6 mx-auto text-center">
+        <h2 className="text-4xl font-semibold mb-6 text-gray-500 sm:underline-offset-8">
+          Certifications
+        </h2>
+        <div className="space-y-4 mb-16">
+          {certifications.map((badge, i) => {
+            return (
+              <div>
+                <Card
+                  className={"w-full max-w-lg mb-16"}
+                  key={i}
+                  value={badge.id}
+                >
+                  <CardHeader>
+                    <CardTitle
+                      className={"text-3xl text-center mb-8 text-gray-700"}
+                    >
+                      {badge.name}
+                    </CardTitle>
+                    <CardContent>
+                      <div className="space-y-6 badge-image-wrapper">
+                        <div className="badge-image">
+                          <img
+                            className="rounded-lg shadow-2xl border mx-auto"
+                            src={badge.image}
+                            alt={badge.name}
+                            width={230}
+                            height={120}
+                          />
+                        </div>
+                      </div>
+                    </CardContent>
+                  </CardHeader>
+                </Card>
               </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
-      </section>
+      </div>
     </div>
   );
 };

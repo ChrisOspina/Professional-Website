@@ -23,6 +23,7 @@ const EducationPage = () => {
               <CardHeader>
                 <CardTitle
                   className={"text-3xl text-center mb-8 text-gray-700"}
+                  href={school.url}
                 >
                   {school.schoolName}
                 </CardTitle>
