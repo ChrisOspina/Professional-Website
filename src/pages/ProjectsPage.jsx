@@ -1,56 +1,65 @@
-import React from "react";
-import * as images from "../include/images.js";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "../Components/ui/card";
+import { projects } from "../data/projects.js";
 
-const ProjectsPage = () => {
+const CertificationsPage = () => {
   return (
-    <div>
-      <section id="projects" className="section scrollspy">
-        <h2 className="section-heading">Projects</h2>
-        <div className="container">
-          <div className="row">
-            <div class="col s12 m6 l6">
-              <div class="card">
-                <div class="card-content">
-                  <ul id="projects-list">
-                    <li>
-                      <a
-                        aria-label="Chest X-ray web app"
-                        href="https://github.com/ChrisOspina/2024S-Med-X"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img
-                          className="project-img"
-                          id="med-x"
-                          alt="Chest X-ray web app"
-                          src={images.Medxlogo}
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        aria-label="Healthy Eating meal planner mobile app"
-                        href="https://github.com/ChrisOspina/Final-CS639"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img
-                          className="project-img"
-                          id="plateperf"
-                          alt="PlatePerfect app"
-                          src={images.platePerflogo}
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+    <div className="flex flex-col items-center grid-cols-2">
+      <div className="pace-y-6 mx-auto text-center">
+        <h2 className="text-4xl font-semibold mb-6 text-gray-500 sm:underline-offset-8">
+          Projects
+        </h2>
+        <div className="space-y-4 mb-16">
+          {projects.map((project, i) => {
+            return (
+              <div>
+                <Card
+                  className={"w-full max-w-lg mb-16"}
+                  key={i}
+                  value={project.id}
+                >
+                  <CardHeader>
+                    <CardTitle
+                      className={"text-3xl text-center mb-8 text-gray-700"}
+                    >
+                      {project.name}
+                    </CardTitle>
+                    <CardDescription
+                      className={
+                        " text-lg font-medium py-6 text-center text-gray-500"
+                      }
+                    >
+                      {project.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-6 badge-image-wrapper">
+                      <div className="badge-image">
+                        <a href={project.url}>
+                          <img
+                            className="rounded-lg shadow-2xl border mx-auto"
+                            src={project.image}
+                            alt={project.name}
+                            width={230}
+                            height={120}
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
-      </section>
+      </div>
     </div>
   );
 };
 
-export default ProjectsPage;
+export default CertificationsPage;

@@ -3,7 +3,7 @@ export const education =[
         id: 0,
         schoolName: "Farmingdale State College",
         location: "Farmingdale, NY",
-        degree: "Bachelor of Science in Computer Programming & Information Systems",
+        degree: "B.S. in Computer Programming & Information Systems",
         coursework:[
             "Web Database Development",
             "Data Structures",
@@ -20,7 +20,7 @@ export const education =[
         id: 1,
         schoolName: "Pace University",
         location: "New York & Pleasantville, NY",
-        degree: "Masters of Science in Computer Science",
+        degree: "M.S. in Computer Science",
         coursework:[
             "Algorithms",
             "Database Managment Systems",

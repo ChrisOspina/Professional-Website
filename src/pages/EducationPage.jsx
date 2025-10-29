@@ -21,13 +21,14 @@ const EducationPage = () => {
           return (
             <Card className={"w-full max-w-lg mb-16"} key={i} value={school.id}>
               <CardHeader>
-                <CardTitle
-                  className={"text-3xl text-center mb-8 text-gray-700"}
-                  href={school.url}
-                >
-                  {school.schoolName}
+                <CardTitle>
+                  <a href={school.url}>
+                    <h2 className="text-3xl text-center mb-8 text-gray-700 hover:text-blue-600">
+                      {school.schoolName}
+                    </h2>
+                  </a>
                 </CardTitle>
-                <span className="text-gray-700 font-thin mb-8">
+                <span className="text-gray-700 font-medium mb-8 text-center">
                   {school.location}
                 </span>
 
@@ -38,9 +39,9 @@ const EducationPage = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="flex flex-col mt-8">
-                  <span className="text-blue-600 font-semibold text-xl mb-2 ">
-                    Relevant Coursework:
+                <div className="flex flex-col mt-6 items-center">
+                  <span className="text-blue-600 font-semibold text-xl mb-2 underline">
+                    Relevant Coursework
                   </span>
                   <ul className="list-disc">
                     {school.coursework.map((course) => {

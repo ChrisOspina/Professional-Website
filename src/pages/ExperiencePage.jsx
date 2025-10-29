@@ -28,12 +28,14 @@ const ExperiencePage = () => {
           return (
             <Card className={"w-full max-w-lg mb-16"} key={i} value={job.id}>
               <CardHeader>
-                <CardTitle
-                  className={"text-3xl text-center mb-8 text-gray-700"}
-                >
-                  {job.companyName}
+                <CardTitle>
+                  <a href={job.url}>
+                    <h2 className="text-3xl text-center mb-8 text-gray-700 hover:text-blue-600">
+                      {job.companyName}
+                    </h2>
+                  </a>
                 </CardTitle>
-                <span className="text-gray-700 font-thin mb-8">
+                <span className="text-gray-700 font-medium mb-8 text-center">
                   {job.location}
                 </span>
                 <CardDescription
@@ -46,9 +48,9 @@ const ExperiencePage = () => {
                 <div className="space-y-4 text-center text-gray-700">
                   <span>{job.description}</span>
                 </div>
-                <div className="flex flex-col mt-8">
-                  <span className="text-blue-600 font-semibold text-xl mb-2 ">
-                    Tools:
+                <div className="flex flex-col mt-8 items-center">
+                  <span className="text-blue-600 font-semibold text-xl mb-2 underline ">
+                    Tools
                   </span>
                   <ul className="list-disc">
                     {job.tools.map((tool) => {
@@ -58,15 +60,11 @@ const ExperiencePage = () => {
                 </div>
               </CardContent>
               <CardFooter>
-                <div className="space-y-8 text-gray-500">
-                  <ul>
-                    <li>
-                      {job.startDate.toLocaleDateString("en-US", dateOptions)}
-                    </li>
-                    <li>
-                      {job.endDate.toLocaleDateString("en-US", dateOptions)}
-                    </li>
-                  </ul>
+                <div className="space-y-8 text-gray-500 font-semibold">
+                  <span>
+                    {job.startDate.toLocaleDateString("en-US", dateOptions)} -{" "}
+                    {job.endDate.toLocaleDateString("en-US", dateOptions)}{" "}
+                  </span>
                 </div>
               </CardFooter>
             </Card>

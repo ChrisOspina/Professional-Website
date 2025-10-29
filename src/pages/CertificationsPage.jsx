@@ -25,24 +25,25 @@ const CertificationsPage = () => {
                 >
                   <CardHeader>
                     <CardTitle
-                      className={"text-3xl text-center mb-8 text-gray-700"}
+                      className={"text-3xl text-center mb-4 text-gray-700"}
                     >
                       {badge.name}
                     </CardTitle>
-                    <CardContent>
-                      <div className="space-y-6 badge-image-wrapper">
-                        <div className="badge-image">
-                          <img
-                            className="rounded-lg shadow-2xl border mx-auto"
-                            src={badge.image}
-                            alt={badge.name}
-                            width={230}
-                            height={120}
-                          />
-                        </div>
-                      </div>
-                    </CardContent>
                   </CardHeader>
+
+                  <CardContent>
+                    <div className="space-y-6 badge-image-wrapper">
+                      <div className="badge-image">
+                        <img
+                          className="rounded-lg shadow-2xl border mx-auto"
+                          src={badge.image}
+                          alt={badge.name}
+                          width={230}
+                          height={120}
+                        />
+                      </div>
+                    </div>
+                  </CardContent>
                 </Card>
               </div>
             );
