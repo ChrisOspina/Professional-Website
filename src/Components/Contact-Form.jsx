@@ -6,20 +6,31 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
+import { toast } from "sonner";
 
 const ContactForm = () => {
   const form = useForm({
     resolver: zodResolver(ContactSchema),
     defaultValues: {
       name: "",
-      email: "example@123.com",
+      email: "",
       message: "",
     },
   });
 
   //TODO: handle form submission
   const onSubmit = (data) => {
-    console.log("Form Data:", data);
+    try {
+      console.log("Form Data:", data);
+      toast.success("Message sent successfully!");
+    } catch (error) {
+      toast.error("Failed to send message.");
+    }
+  };
+
+  const onReset = () => {
+    toast.info("Form reset.");
+    form.reset();
   };
 
   return (
@@ -72,9 +83,13 @@ const ContactForm = () => {
                   </FormItem>
                 )}
               ></FormField>
-              <div className="flex gap-2">
-                <Button variant={"ghost"}>Reset</Button>
-                <Button type="submit">Submit</Button>
+              <div className="flex gap-2 justify-center">
+                <Button className="text-white space-x-8" type="submit">
+                  Submit
+                </Button>
+                <Button className="bg-red-500 text-white" onClick={onReset}>
+                  Reset
+                </Button>
               </div>
             </form>
           </Form>
