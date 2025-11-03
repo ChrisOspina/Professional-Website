@@ -17,8 +17,13 @@ const ContactForm = () => {
     },
   });
 
+  //TODO: handle form submission
+  const onSubmit = (data) => {
+    console.log("Form Data:", data);
+  };
+
   return (
-    <div className="flex flex-col items-center grid-cols-2">
+    <div className="flex flex-col items-center grid-cols-2 py-16">
       <Card className="w-full sm:max-w-md">
         <CardHeader>
           <CardTitle className={"text-center text-2xl text-gray-600"}>
@@ -26,8 +31,8 @@ const ContactForm = () => {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          {/* <Form {...form}>
-            <form className="space-y-8">
+          <Form {...form}>
+            <form className="space-y-8" onSubmit={form.handleSubmit(onSubmit)}>
               <FormField
                 control={form.control}
                 name="name"
@@ -54,7 +59,7 @@ const ContactForm = () => {
               ></FormField>
               <FormField
                 control={form.control}
-                name="email"
+                name="message"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Message</FormLabel>
@@ -67,12 +72,12 @@ const ContactForm = () => {
                   </FormItem>
                 )}
               ></FormField>
-              <FormField orientation="horizontal">
+              <div className="flex gap-2">
                 <Button variant={"ghost"}>Reset</Button>
                 <Button type="submit">Submit</Button>
-              </FormField>
+              </div>
             </form>
-          </Form> */}
+          </Form>
         </CardContent>
       </Card>
     </div>
