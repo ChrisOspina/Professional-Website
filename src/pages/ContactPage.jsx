@@ -1,54 +1,43 @@
 import React from "react";
 import ContactForm from "../Components/Contact-Form";
+import { Github, Linkedin } from "lucide-react";
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
+      <h1 className="text-4xl font-semibold mb-3 text-gray-500 sm:underline-offset-8">
+        Contact
+      </h1>
       <ContactForm />
-      <div></div>
-      {/* {" "}
-      <section id="contact" className="section scrollspy">
-        <h2 className="section-heading">Contact Me</h2>
-        <div className="contact_container">
-          <ul id="contact-ul">
-            <li className="contact-li">
-              <a
-                title="Shoot me an Email"
-                href="mailto:ChrisOspina99@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fa-regular fa-envelope fa-lg li-icon"></i>
-              </a>
-            </li>
-            <br />
-            <li classname="contact-li">
-              <a
-                title="Check out my projects on GitHub"
-                href="https://github.com/ChrisOspina"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fa-brands fa-github fa-lg li-icon"></i>
-              </a>
-            </li>
-            <br />
-            <li className="contact-li">
-              <a
-                title="Connect with me on LinkedIn"
-                href="https://www.linkedin.com/in/christopher-ospina-311b68185/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i
-                  className="fa-brands fa-linkedin fa-lg li-icon"
-                  title="Connect with me on LinkedIn"
-                ></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section> */}
+      <div className="space-y-6 mx-auto text-center my-8">
+        <h2 className="text-2xl font-semibold mb-6 text-gray-500 sm:underline-offset-8">
+          Connect With Me
+        </h2>
+        <ul className="flex flex-row gap-8 justify-center">
+          <li>
+            <a
+              className="flex flex-col items-center gap-2 group"
+              href="https://github.com/ChrisOspina"
+            >
+              <div className="w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors">
+                <Github className="w-6 h-6 text-white" />
+              </div>
+              <span className="mr-2 text-center">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex flex-col items-center gap-2 group"
+              href="https://www.linkedin.com/in/christopher-ospina-311b68185/"
+            >
+              <div className="w-12 h-12 rounded-full bg-blue-700 hover:bg-blue-600 flex items-center justify-center transition-colors">
+                <Linkedin className="w-6 h-6 text-white" />
+              </div>
+              <span className="mr-2 text-center">LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

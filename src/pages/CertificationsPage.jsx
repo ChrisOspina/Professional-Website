@@ -10,7 +10,7 @@ import { certifications } from "../data/certifications.js";
 const CertificationsPage = () => {
   return (
     <div className="flex flex-col items-center grid-cols-2">
-      <div className="pace-y-6 mx-auto text-center">
+      <div className="space-y-6 mx-auto text-center">
         <h2 className="text-4xl font-semibold mb-6 text-gray-500 sm:underline-offset-8">
           Certifications
         </h2>
