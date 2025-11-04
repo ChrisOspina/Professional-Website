@@ -8,7 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { toast } from "sonner";
-import emailjs from "@emailjs/browser";
+import axios from "axios";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -23,49 +23,57 @@ const ContactForm = () => {
       message: "",
     },
   });
-
   //TODO: handle form submission
-  const onSubmit = (e) => {
+  const onSubmit = async (formValues) => {
     try {
-      e.preventDefault();
+      // form.handleSubmit already prevents default; use values from react-hook-form
+      const {
+        name: submittedName,
+        email: submittedEmail,
+        message: submittedMessage,
+      } = formValues;
 
       //Environment variables for emailjs (not used in this snippet)
-      const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-      const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+      const serviceID = "service_rgidq2f";
+      const templateID = "template_e7d121r";
+      const publicKey = "3BKqHyBmMddhyRi-t";
 
       //The form data to be sent
       const data = {
         service_id: serviceID,
         template_id: templateID,
         user_id: publicKey,
-        templateParams: {
-          name: name,
-          email: email,
-          message: message,
+        template_params: {
+          name: submittedName,
+          email: submittedEmail,
+          message: submittedMessage,
         },
       };
+      // Sending email using emailjs
+      try {
+        const res = await axios.post(
+          "https://api.emailjs.com/api/v1.0/email/send",
+          data
+        );
+        console.log("Email sent successfully:", res.data);
+        toast.success("Email sent successfully!");
 
-      // emailjs.send(serviceID, templateID, templateParams, publicKey).then(
-      //   (response) => {
-      //     console.log("SUCCESS!", response.status, response.text);
-      //     setName("");
-      //     setEmail("");
-      //     setMessage("");
-      //   },
-      //   (error) => {
-      //     console.log("FAILED...", error);
-      //     toast.error("Failed to send message.");
-      //   }
-      // );
+        // Clear form fields after successful submission
+        setName("");
+        setEmail("");
+        setMessage("");
+        form.reset();
+      } catch (error) {
+        console.error("Error sending email:", error);
+        toast.error("Failed to send message.");
+        return;
+      }
 
-      //console.log("Form Data:", data);
       toast.success("Message sent successfully!");
     } catch (error) {
       toast.error("Failed to send message.");
     }
   };
-
   const onReset = () => {
     toast.info("Form reset.");
     form.reset();
