@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "./ui/form";
 import { Button } from "./ui/button";
@@ -7,8 +8,13 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   const form = useForm({
     resolver: zodResolver(ContactSchema),
     defaultValues: {
@@ -19,9 +25,41 @@ const ContactForm = () => {
   });
 
   //TODO: handle form submission
-  const onSubmit = (data) => {
+  const onSubmit = (e) => {
     try {
-      console.log("Form Data:", data);
+      e.preventDefault();
+
+      //Environment variables for emailjs (not used in this snippet)
+      const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+      //The form data to be sent
+      const data = {
+        service_id: serviceID,
+        template_id: templateID,
+        user_id: publicKey,
+        templateParams: {
+          name: name,
+          email: email,
+          message: message,
+        },
+      };
+
+      // emailjs.send(serviceID, templateID, templateParams, publicKey).then(
+      //   (response) => {
+      //     console.log("SUCCESS!", response.status, response.text);
+      //     setName("");
+      //     setEmail("");
+      //     setMessage("");
+      //   },
+      //   (error) => {
+      //     console.log("FAILED...", error);
+      //     toast.error("Failed to send message.");
+      //   }
+      // );
+
+      //console.log("Form Data:", data);
       toast.success("Message sent successfully!");
     } catch (error) {
       toast.error("Failed to send message.");
@@ -51,7 +89,13 @@ const ContactForm = () => {
                   <FormItem>
                     <FormLabel>Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="your name" {...field} />
+                      <Input
+                        type={"text"}
+                        placeholder="your name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        {...field}
+                      />
                     </FormControl>
                   </FormItem>
                 )}
@@ -63,7 +107,13 @@ const ContactForm = () => {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="example@123.com" {...field} />
+                      <Input
+                        placeholder="example@123.com"
+                        type={"email"}
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        {...field}
+                      />
                     </FormControl>
                   </FormItem>
                 )}
@@ -77,6 +127,8 @@ const ContactForm = () => {
                     <FormControl>
                       <Textarea
                         placeholder="your message goes here"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                         {...field}
                       />
                     </FormControl>

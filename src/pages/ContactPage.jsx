@@ -5,6 +5,7 @@ const ContactPage = () => {
   return (
     <div>
       <ContactForm />
+      <div></div>
       {/* {" "}
       <section id="contact" className="section scrollspy">
         <h2 className="section-heading">Contact Me</h2>
