@@ -75,15 +75,14 @@ const ContactForm = () => {
     }
   };
   const onReset = () => {
-    toast.info("Form reset.");
     form.reset();
   };
 
   return (
-    <div className="grid-cols-2 py-16 w-full flex justify-center">
+    <div className="grid-cols-2 py-16 mb-4 w-full flex justify-center">
       <Card className="w-full sm:max-w-md">
         <CardHeader>
-          <CardTitle className={"text-center text-2xl text-gray-600"}>
+          <CardTitle className={"text-center text-3xl text-gray-600"}>
             Contact Me
           </CardTitle>
         </CardHeader>
@@ -95,7 +94,9 @@ const ContactForm = () => {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Name</FormLabel>
+                    <FormLabel className={"text-lg text-gray-500"}>
+                      Name
+                    </FormLabel>
                     <FormControl>
                       <Input
                         type={"text"}
@@ -113,7 +114,9 @@ const ContactForm = () => {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel className={"text-lg text-gray-500"}>
+                      Email
+                    </FormLabel>
                     <FormControl>
                       <Input
                         placeholder="example@123.com"
@@ -131,7 +134,9 @@ const ContactForm = () => {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Message</FormLabel>
+                    <FormLabel className={"text-lg text-gray-500"}>
+                      Message
+                    </FormLabel>
                     <FormControl>
                       <Textarea
                         placeholder="your message goes here"
@@ -144,10 +149,16 @@ const ContactForm = () => {
                 )}
               ></FormField>
               <div className="flex gap-2 justify-center">
-                <Button className="text-white space-x-8" type="submit">
+                <Button
+                  className="text-white space-x-8 bg-blue-600 hover:bg-blue-700"
+                  type="submit"
+                >
                   Submit
                 </Button>
-                <Button className="bg-red-500 text-white" onClick={onReset}>
+                <Button
+                  className="bg-red-500 hover:bg-red-600 text-white"
+                  onClick={onReset}
+                >
                   Reset
                 </Button>
               </div>

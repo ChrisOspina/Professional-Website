@@ -5,12 +5,10 @@ import { Github, Linkedin } from "lucide-react";
 const ContactPage = () => {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-4xl font-semibold mb-3 text-gray-500 sm:underline-offset-8">
-        Contact
-      </h1>
+      <div className="grid-background" />
       <ContactForm />
       <div className="space-y-6 mx-auto text-center my-8">
-        <h2 className="text-2xl font-semibold mb-6 text-gray-500 sm:underline-offset-8">
+        <h2 className="py-8 text-2xl font-semibold mb-6 text-gray-500 sm:underline-offset-8">
           Connect With Me
         </h2>
         <ul className="flex flex-row gap-8 justify-center">
