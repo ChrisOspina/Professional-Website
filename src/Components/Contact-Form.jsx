@@ -64,7 +64,9 @@ const ContactForm = () => {
     <div className="grid-cols-2 mb-4 w-full flex justify-center">
       <Card className="w-full sm:max-w-md">
         <CardHeader>
-          <CardTitle className={"text-center text-3xl text-gray-600"}>
+          <CardTitle
+            className={"text-center text-3xl font-semibold text-gray-600"}
+          >
             Contact Me
           </CardTitle>
         </CardHeader>

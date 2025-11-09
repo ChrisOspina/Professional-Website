@@ -30,14 +30,6 @@ function ChrisNav() {
   //TODO: call the useMedia hook to determine if is desktop
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
-  //This function opens up the resume
-  const openResume = () => {
-    window.open(
-      "https://docs.google.com/document/d/e/2PACX-1vT7D-WqYybf5U3y1wWVKvcPPKgSar9AYW2AvL9tMdf-L8uNWnxTovx_hdsMCX1sGA/pub",
-      "_self"
-    );
-  };
-
   return isDesktop ? (
     <div className="fixed top-0 left-0 w-full h-16 bg-gray-500 shadow-md z-50 flex justify-between ">
       <NavigationMenu className={"w-full"}>
@@ -95,7 +87,7 @@ function ChrisNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem id="resume">
-            <Link onClick={openResume} className="mr-2 md:mr-4">
+            <Link href="/resume" className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
                 <FileUser className="h-4 w-4" />
                 <span className="hidden md:block">Resume</span>
@@ -197,7 +189,7 @@ function ChrisNav() {
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem id="resume">
-                  <Link onClick={openResume} className="w-full">
+                  <Link href="/resume" className="w-full">
                     <Button
                       variant={"ghost"}
                       className="flex w-full items-center justify-start"

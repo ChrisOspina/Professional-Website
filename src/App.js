@@ -9,6 +9,7 @@ import ExperiencePage from "./pages/ExperiencePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import CertificationsPage from "./pages/CertificationsPage";
 import ContactPage from "./pages/ContactPage";
+import ResumePage from "./pages/ResumePage";
 
 
 const App=()=> {
@@ -25,6 +26,7 @@ const App=()=> {
       <Route path="/education" element={<EducationPage/>} />
       <Route path="/certifications" element={<CertificationsPage/>} />
       <Route path="/contact" element={<ContactPage/>}/>
+      <Route path="/resume" element={<ResumePage/>}/> 
     </Routes>
     <footer>
       <Footer/>
