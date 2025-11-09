@@ -1,4 +1,4 @@
-//#region Imports
+//#region IMPORTS
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -39,13 +39,13 @@ function ChrisNav() {
   };
 
   return isDesktop ? (
-    <div className="fixed top-0 left-0 w-full h-16 bg-gray-500 shadow-md z-50 flex items-center justify-between px-4">
-      <NavigationMenu
-        className={
-          "flex space-x-2 md:space-x-4 overflow-x-auto lg:overflow-visible items-center"
-        }
-      >
-        <NavigationMenuList className={"flex items-center text-white"}>
+    <div className="fixed top-0 left-0 w-full h-16 bg-gray-500 shadow-md z-50 flex justify-between ">
+      <NavigationMenu className={"w-full"}>
+        <NavigationMenuList
+          className={
+            "flex flex-row text-white w-full justify-between items-center ml-20 px-4"
+          }
+        >
           <NavigationMenuItem id="about">
             <Link href="/" className="mr-2 md:mr-4">
               <Button variant={"hidden"}>
