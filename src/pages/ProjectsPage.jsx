@@ -9,17 +9,17 @@ import { projects } from "../data/projects.js";
 
 const CertificationsPage = () => {
   return (
-    <div className="flex flex-col items-center grid-cols-2">
-      <div className="pace-y-6 mx-auto text-center">
+    <div className="flex flex-col items-center">
+      <div className="w-full max-w-7xl px-4 text-center">
         <h2 className="text-4xl font-semibold mb-6 text-gray-500 sm:underline-offset-8">
           Projects
         </h2>
-        <div className="space-y-4 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 justify-items-center">
           {projects.map((project, i) => {
             return (
               <div>
                 <Card
-                  className={"w-full max-w-lg mb-16"}
+                  className={"w-full h-[500px] flex flex-col space-x-8"}
                   key={i}
                   value={project.id}
                 >
@@ -37,16 +37,16 @@ const CertificationsPage = () => {
                       {project.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-grow flex items-center justify-center">
                     <div className="space-y-6 badge-image-wrapper">
                       <div className="badge-image">
                         <a href={project.url}>
                           <img
-                            className="rounded-lg shadow-2xl border mx-auto"
+                            className="rounded-lg shadow-2xl border mx-auto h-full w-full object-cover"
                             src={project.image}
                             alt={project.name}
-                            width={230}
-                            height={120}
+                            // width={230}
+                            // height={120}
                           />
                         </a>
                       </div>

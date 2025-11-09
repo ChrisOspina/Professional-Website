@@ -6,6 +6,7 @@ export { default as platePerflogo } from '../assets/images/projects/platePerflog
 export { default as screenshot_krono } from '../assets/images/projects/krono_screenshot.png';
 export { default as screenshot_shooter } from '../assets/images/projects/shooting_screenshot.png';
 export { default as screenshot_bogeymen } from '../assets/images/projects/screenshot_bogeymen.png';
+export { default as sensailogo } from '../assets/images/projects/banner.jpeg';
 
 
 
