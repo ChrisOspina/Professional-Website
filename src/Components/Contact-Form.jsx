@@ -60,10 +60,6 @@ const ContactForm = () => {
     }
   };
 
-  const onReset = () => {
-    form.reset();
-  };
-
   return (
     <div className="grid-cols-2 mb-4 w-full flex justify-center">
       <Card className="w-full sm:max-w-md">
@@ -74,7 +70,7 @@ const ContactForm = () => {
         </CardHeader>
         <CardContent>
           <Form {...form}>
-            <form className="space-y-8" onSubmit={form.handleSubmit(onSubmit)}>
+            <form className="space-y-4" onSubmit={form.handleSubmit(onSubmit)}>
               <FormField
                 control={form.control}
                 name="name"
@@ -86,14 +82,20 @@ const ContactForm = () => {
                     <FormControl>
                       <Input type={"text"} placeholder="your name" {...field} />
                     </FormControl>
-                    <FormMessage className={"text-sm text-red-600"} />
+                    <div className="mt-1">
+                      {fieldState.error && (
+                        <FormMessage className="text-red-500 text-sm">
+                          {fieldState.error.message}
+                        </FormMessage>
+                      )}
+                    </div>
                   </FormItem>
                 )}
               ></FormField>
               <FormField
                 control={form.control}
                 name="email"
-                render={({ field }) => (
+                render={({ field, fieldState }) => (
                   <FormItem>
                     <FormLabel className={"text-lg text-gray-500"}>
                       Email
@@ -105,14 +107,20 @@ const ContactForm = () => {
                         {...field}
                       />
                     </FormControl>
-                    <FormMessage className={"text-sm text-red-600"} />
+                    <div className="mt-1">
+                      {fieldState.error && (
+                        <FormMessage className="text-red-500 text-sm">
+                          {fieldState.error.message}
+                        </FormMessage>
+                      )}
+                    </div>
                   </FormItem>
                 )}
               ></FormField>
               <FormField
                 control={form.control}
                 name="message"
-                render={({ field }) => (
+                render={({ field, fieldState }) => (
                   <FormItem>
                     <FormLabel className={"text-lg text-gray-500"}>
                       Message
@@ -124,7 +132,13 @@ const ContactForm = () => {
                         {...field}
                       />
                     </FormControl>
-                    <FormMessage className={"text-sm text-red-600"} />
+                    <div className="mt-1">
+                      {fieldState.error && (
+                        <FormMessage className="text-red-500 text-sm">
+                          {fieldState.error.message}
+                        </FormMessage>
+                      )}
+                    </div>
                   </FormItem>
                 )}
               ></FormField>
@@ -134,12 +148,6 @@ const ContactForm = () => {
                   type="submit"
                 >
                   {isSubmitting ? "Sending..." : "Submit"}
-                </Button>
-                <Button
-                  className="bg-red-500 hover:bg-red-600 text-white"
-                  onClick={onReset}
-                >
-                  Reset
                 </Button>
               </div>
             </form>
