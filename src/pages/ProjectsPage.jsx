@@ -38,11 +38,11 @@ const CertificationsPage = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow flex items-center justify-center">
-                    <div className="space-y-6 badge-image-wrapper">
+                    <div className="space-y-3 badge-image-wrapper">
                       <div className="badge-image">
                         <a href={project.url}>
                           <img
-                            className="rounded-lg shadow-2xl border mx-auto h-full w-full object-cover"
+                            className="rounded-lg shadow-2xl border mx-auto h-[200px] w-full object-cover"
                             src={project.image}
                             alt={project.name}
                             // width={230}
