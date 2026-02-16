@@ -57,16 +57,15 @@ const HomePage = () => {
         <div className="border-box">
           <div className="flex flex-row items-center justify-between space-y-0 pb-2">
             <p className="mx-auto max-w-[650px] md:text-lg text-gray-800 pb-4">
-              I am a software engineer with over four years of professional
-              experience seeking opportunities to use state-of-the-art
-              technology to solve real-world problems. I enjoy problem-solving
-              and coding, and I always strive to bring 100% to the work I do.
-              During my bachelor's in Computer Programming & Information Systems
-              as well as my master's in Computer Science, I have worked with
-              various technologies, including C++, Python, Java, and MySQL in
-              various platforms, including Unix, Azure, Node.js, and the Unity
-              engine. I am passionate about developing complex applications that
-              solve real-world problems impacting millions of users.
+              I am a Junior Software Developer with 4+ years of hands‑on
+              experience designing, building, and maintaining scalable web
+              applications. Strong foundation in C, C++, JavaScript, SQL, and
+              modern development workflows, including AI‑assisted coding tools
+              (Claude, Copilot) and Agile methodologies. Adept at architecting
+              clean, maintainable systems, troubleshooting complex issues, and
+              collaborating with cross‑functional teams. Experienced across
+              cloud environments with a growing focus on rapid iteration and
+              vibe‑coding development practices.
             </p>
           </div>
           <div className="flex flex-row justify-between space-y-0 pb-2">
@@ -83,13 +82,13 @@ const HomePage = () => {
           <div className="mb-8">
             <ul className="list-disc list-outside pl-6 space-y-2">
               <li className="flex flex-col mb-4">
-                <span className="inline-block font-bold">Languages</span> C++,
-                Python, SQL, HTML, Java, JavaScript, PHP, C#, Bash,
+                <span className="inline-block font-bold">Languages</span>
+                C, C++, Python, SQL, HTML, CSS, Java, JavaScript, PHP, C#, Bash,
               </li>
               <li className="flex flex-col mb-4">
                 <span className="inline-block font-bold">Software</span>{" "}
-                Microsoft Office, VS Code, Visual Studio, Unity, Android Studio,
-                Eclipse, GitHub, Docker, Vercel, Jira
+                Microsoft Office, VS Code, Visual Studio, Apache Kafka, Node.js,
+                Git, Docker, Kubernetes, Claude
               </li>
               <li className="flex flex-col mb-4">
                 <span className="inline-block font-bold">
@@ -98,17 +97,16 @@ const HomePage = () => {
                 Linux, Microsoft Windows, MacOS
               </li>
               <li className="flex flex-col mb-4">
-                <span className="inline-block font-bold">
-                  Cloud Enviromnents
-                </span>{" "}
-                AWS, Microsoft Azure, Google Cloud
+                <span className="inline-block font-bold">Cloud & DevOps</span>{" "}
+                AWS, Microsoft Azure, Google Cloud, CI/CD pipelines,
+                containerization, distributed systems, Git
               </li>
               <li className="flex flex-col mb-4">
                 <span className="inline-block font-bold">
-                  Libraries and Frameworks
+                  Libraries & Frameworks
                 </span>{" "}
-                React/Native/Angular, Tailwind CSS, Build Tools, Telerik,
-                Blazor, .NET Core, Relational Databases
+                React/Native/Angular, Tailwind, Build Tools, Telerik, Blazor,
+                .NET Core, Relational Databases
               </li>
               <li className="flex flex-col mb-4">
                 <span className="inline-block font-bold">Soft Skills</span>{" "}
