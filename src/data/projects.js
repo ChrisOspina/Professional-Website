@@ -52,7 +52,7 @@ export const projects = [
     //TODO: Include information about the Healthy Eating platform
     id: 6,
     name: "SmartPlate Healthy Eating Platform",
-    url: "https://github.com/ChrisOspina/SmartPlate",
+    url: "https://smart-plate-xi.vercel.app/",
     image: images.smartplatelogo,
   },
 ];
