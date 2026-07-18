@@ -1,6 +1,33 @@
 export const experience = [
   {
     id: 0,
+    companyName: "Nebulas.co",
+    roleName: "Developer",
+    description: (
+      <p>
+        Developed and maintained a suite of internal and client applications using Php, React, and modern AI-assisted coding workflows. Implemented a robust database architecture to ensure scalable, reliable data storage. Conducted code reviews and audits to ensure adherence to coding standards and best practices. Collaborated with cross-functional teams to design and implement new features, improving overall user experience.
+        used Confluence and Jira for project management and documentation. Implemented REST APIs to facilitate seamless communication between applications and external services.
+      </p>
+    ),
+    tools: [
+      "Visual Studio",
+      "VSCode",
+      "Apache",
+      "GitHub",
+      "Azure",
+      "Php",
+      "Jira",
+      "Confluence",
+      "Claude Code",
+      "REST API",
+    ],
+    startDate: new Date(2026, 3, 12),
+    endDate: new Date(2027, 6, 3),
+    location: "Valley Stream, NY",
+    url: "https://www.nebulas.co/",
+  },
+  {
+    id: 1,
     companyName: "Anipso Systems",
     roleName: "Developer",
     description: (
@@ -30,12 +57,12 @@ export const experience = [
       "MYSQL",
     ],
     startDate: new Date(2025, 7, 20),
-    endDate: new Date(2026, 12, 31),
+    endDate: new Date(2026, 6, 3),
     location: "Lynbrook, NY",
     url: "https://anip.so/",
   },
   {
-    id: 1,
+    id: 2,
     companyName: "Saberin Software",
     roleName: "Entry Level Developer",
     description: (
@@ -65,7 +92,7 @@ export const experience = [
     url: "https://www.saberin.com/",
   },
   {
-    id: 2,
+    id: 3,
     companyName: "Saberin Software",
     roleName: "Professional Development Intern",
     description: (
@@ -95,7 +122,7 @@ export const experience = [
     url: "https://www.saberin.com/",
   },
   {
-    id: 3,
+    id: 4,
     companyName: "The Simons Foundation",
     roleName: "Linux Systems Administrator Intern",
     description: (
@@ -126,7 +153,7 @@ export const experience = [
     url: "https://www.simonsfoundation.org/",
   },
   {
-    id: 4,
+    id: 6,
     companyName: "SAS Technologies",
     roleName: "Project Assistant",
     description: (
